@@ -1,8 +1,8 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-19T11:30:12.174Z",
-	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"__export_date": "2018-11-20T15:49:44.257Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
 			"_id": "wrk_ddc05b32652a43a2b14929e20555da74",
@@ -37,9 +37,9 @@
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "5401756914340365",
+					"id": "7133998624690514",
 					"key": "KC_RESTART",
-					"lastAccessed": "2018-11-19T11:29:29.745Z",
+					"lastAccessed": "2018-11-20T15:40:45.852Z",
 					"maxAge": 0,
 					"path": "/auth/realms/master/"
 				},
@@ -52,15 +52,15 @@
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "6265703890151977",
+					"id": "5234695583388915",
 					"key": "KC_RESTART",
-					"lastAccessed": "2018-10-15T14:54:34.655Z",
+					"lastAccessed": "2018-11-20T15:49:07.801Z",
 					"maxAge": 0,
 					"path": "/auth/realms/ativa-demo/"
 				}
 			],
 			"created": 1539008053014,
-			"modified": 1542626969746,
+			"modified": 1542728947802,
 			"name": "Default Jar",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "cookie_jar"
@@ -203,7 +203,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539017243980,
 			"method": "POST",
-			"modified": 1542626643610,
+			"modified": 1542728945037,
 			"name": "Obter token (service account)",
 			"parameters": [
 				{
@@ -256,12 +256,12 @@
 					{
 						"id": "pair_7d8472499d684fc99ad03dc4bf8d0134",
 						"name": "username",
-						"value": ""
+						"value": "jair"
 					},
 					{
 						"id": "pair_f20aab18ac4e457c8782ae534bea6bf0",
 						"name": "password",
-						"value": ""
+						"value": "136801"
 					}
 				]
 			},
@@ -277,8 +277,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113184998,
 			"method": "POST",
-			"modified": 1542626640982,
-			"name": "Obter token (usuario com senha)",
+			"modified": 1542728977690,
+			"name": "Obter token (usuario e senha)",
 			"parameters": [],
 			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
 			"settingDisableRenderRequestBody": false,
@@ -335,7 +335,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539010935158.3125,
 			"method": "POST",
-			"modified": 1542626990842,
+			"modified": 1542728935033,
 			"name": "Obter token (admin)",
 			"parameters": [],
 			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
@@ -376,7 +376,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832117.75,
 			"method": "GET",
-			"modified": 1542206879447,
+			"modified": 1542728921341,
 			"name": "Obter qtd de usuarios",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -408,13 +408,13 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832192.75,
 			"method": "GET",
-			"modified": 1539615131071,
+			"modified": 1542728922191,
 			"name": "Obter dados usuario",
 			"parameters": [
 				{
-					"id": "pair_6077a5cb67704d469e8e37abcb372bad",
-					"name": "username",
-					"value": "{{ test_username  }}"
+					"id": "pair_ad1755a617e041b38b0b5864bc64d315",
+					"name": "",
+					"value": ""
 				}
 			],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -424,7 +424,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users",
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/33905810-c3f6-4cd9-a713-25aa4dee3891",
 			"_type": "request"
 		},
 		{
@@ -455,7 +455,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832167.75,
 			"method": "PUT",
-			"modified": 1542626414421,
+			"modified": 1542642910904,
 			"name": "Alterar senha usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -486,13 +486,13 @@
 			},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{ \n    \"username\" : \"dunha22sadfsaasdasddgfd2@hotmail.com\",\n    \"enabled\": true,\n    \"email\": \"aasdsaccxxc@hotmail.com\",\n    \"firstName\": \"dunhaaasasa\",\n    \"lastName\": \"teassasasste\",\n    \"credentials\": [\n    \t{\n    \t\t\"type\": \"password\",\n    \t\t\"value\": \"703851\"\n    \t}]\n}"
+				"text": "{\n\t\"username\": \"jair\",\n\t\"enabled\": true,\n\t\"email\": \"bolsonaro@gmail.com\",\n\t\"firstName\": \"Jair\",\n\t\"lastName\": \"Bolsonaro\",\n\t\"credentials\": [\n\t\t{\n\t\t\t\"type\": \"password\",\n\t\t\t\"value\": \"136801\",\n\t\t\t\"temporary\": false\n\t\t}\n\t]\n}"
 			},
 			"created": 1539116731043,
 			"description": "Erro Usuario existente:\n{\n\t\"errorMessage\": \"User exists with same username\"\n}\n\nErro Email existente:\n{\n\t\"errorMessage\": \"User exists with same email\"\n}\n\nErro Expressao Regular:\n{\n\t\"errorMessage\": \"Could not create user\"\n}",
 			"headers": [
 				{
-					"id": "pair_17bc3d1a35b94a158dcc62007957138a",
+					"id": "pair_9e6b696ae5fa4fe2910e47e10df23209",
 					"name": "Content-Type",
 					"value": "application/json"
 				}
@@ -500,7 +500,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832217.75,
 			"method": "POST",
-			"modified": 1542626620622,
+			"modified": 1542728929580,
 			"name": "Criar novo usuario (admin-cli)",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
