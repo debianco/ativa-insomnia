@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-22T13:40:00.950Z",
+	"__export_date": "2018-11-23T20:08:08.695Z",
 	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
@@ -29,7 +29,7 @@
 			"_id": "jar_b71c8c3c1fef4352b0f1a1f7d3aac54a",
 			"cookies": [
 				{
-					"creation": "2018-11-20T16:30:29.107Z",
+					"creation": "2018-10-15T14:52:03.210Z",
 					"domain": "resource-dev.ativacorretora.com.br",
 					"expires": "1970-01-01T00:00:10.000Z",
 					"extensions": [
@@ -37,30 +37,147 @@
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "8144087493863199",
+					"id": "06669356766018719",
 					"key": "KC_RESTART",
-					"lastAccessed": "2018-11-21T13:48:57.188Z",
+					"lastAccessed": "2018-11-23T13:26:32.753Z",
+					"maxAge": 0,
+					"path": "/auth/realms/master/"
+				},
+				{
+					"creation": "2018-10-15T14:54:34.655Z",
+					"domain": "resource-dev.ativacorretora.com.br",
+					"expires": "1970-01-01T00:00:10.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "534539303073539",
+					"key": "KC_RESTART",
+					"lastAccessed": "2018-11-23T14:44:43.082Z",
 					"maxAge": 0,
 					"path": "/auth/realms/ativa-demo/"
 				},
 				{
-					"creation": "2018-11-20T16:59:38.048Z",
+					"creation": "2018-11-21T18:25:53.387Z",
 					"domain": "resource-dev.ativacorretora.com.br",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "8296304760082696",
+					"key": "AUTH_SESSION_ID",
+					"lastAccessed": "2018-11-21T18:25:53.387Z",
+					"path": "/auth/realms/ativa-demo/",
+					"value": "3404209d-c086-4bc8-8965-46cbaef0dcda.1aefed5ab831"
+				},
+				{
+					"creation": "2018-11-22T12:33:35.514Z",
+					"domain": "resource-dev.ativacorretora.com.br",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "05879078333069465",
+					"key": "KEYCLOAK_IDENTITY",
+					"lastAccessed": "2018-11-22T13:01:12.839Z",
+					"path": "/auth/realms/ativa-demo/",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1ZGY4ZDYxYy02ZjE4LTQ5MjctOGZlZC1hNzgyMmUwMzk3ZjEifQ.eyJqdGkiOiIyZmNmYWIzYi1lODUwLTQxZTAtYmYwMS03ZTQ0Y2ZjMWQ5N2YiLCJleHAiOjE1NDI5MDk2NzgsIm5iZiI6MCwiaWF0IjoxNTQyODkxNjc4LCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwic3ViIjoiOWI2OTJkMjgtMmUyOC00NGQ5LTllNzYtMWViOWFhODdjMDYwIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNzdjMmVhNDktNzY1Mi00OTEzLWJlN2UtOWZlZDMyMzU2ODU0IiwicmVzb3VyY2VfYWNjZXNzIjp7fSwic3RhdGVfY2hlY2tlciI6IndiVk92NldiZW44aVRlcVFBVUh4MFhpTVVKUHplNm05RURocXZPVE5mMGsifQ.-iUs3qOJp8VgU5wpalKjV3vvGubghu1OWg7HOJ5pCpM"
+				},
+				{
+					"creation": "2018-11-22T12:33:35.514Z",
+					"domain": "resource-dev.ativacorretora.com.br",
+					"expires": "2018-11-22T18:01:18.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"id": "7538595777444979",
+					"key": "KEYCLOAK_SESSION",
+					"lastAccessed": "2018-11-22T13:01:12.840Z",
+					"maxAge": 18000,
+					"path": "/auth/realms/ativa-demo/",
+					"value": "ativa-demo/9b692d28-2e28-44d9-9e76-1eb9aa87c060/77c2ea49-7652-4913-be7e-9fed32356854"
+				},
+				{
+					"creation": "2018-11-22T13:20:05.559Z",
+					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "5126500947646813",
+					"key": "AUTH_SESSION_ID",
+					"lastAccessed": "2018-11-22T13:20:05.559Z",
+					"path": "/auth/realms/ativa-demo/",
+					"value": "fa37ee50-9a30-4de5-a829-d22e0f3e1bbd.1aefed5ab831"
+				},
+				{
+					"creation": "2018-11-22T13:20:05.559Z",
+					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
 					"expires": "1970-01-01T00:00:10.000Z",
 					"extensions": [
 						"Version=1"
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "22792568454640572",
+					"id": "6126873648429445",
 					"key": "KC_RESTART",
-					"lastAccessed": "2018-11-21T20:47:54.189Z",
+					"lastAccessed": "2018-11-22T13:20:05.559Z",
 					"maxAge": 0,
-					"path": "/auth/realms/master/"
+					"path": "/auth/realms/ativa-demo/"
+				},
+				{
+					"creation": "2018-11-22T13:20:05.560Z",
+					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "7568107967424942",
+					"key": "KEYCLOAK_IDENTITY",
+					"lastAccessed": "2018-11-22T13:20:05.560Z",
+					"path": "/auth/realms/ativa-demo/",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1ZGY4ZDYxYy02ZjE4LTQ5MjctOGZlZC1hNzgyMmUwMzk3ZjEifQ.eyJqdGkiOiI3NzVmMzU0OS00YTE3LTRmYmUtOGRmMy1jMjEzNDZkMmUxMmYiLCJleHAiOjE1NDI5MTA4MTAsIm5iZiI6MCwiaWF0IjoxNTQyODkyODEwLCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwic3ViIjoiOWI2OTJkMjgtMmUyOC00NGQ5LTllNzYtMWViOWFhODdjMDYwIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNzdjMmVhNDktNzY1Mi00OTEzLWJlN2UtOWZlZDMyMzU2ODU0IiwicmVzb3VyY2VfYWNjZXNzIjp7fSwic3RhdGVfY2hlY2tlciI6IndiVk92NldiZW44aVRlcVFBVUh4MFhpTVVKUHplNm05RURocXZPVE5mMGsifQ.H0aNDMeW9aQkiFUYooL_f1N_dF6Ybfz-u5YZMqYIpvA"
+				},
+				{
+					"creation": "2018-11-22T13:20:05.560Z",
+					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
+					"expires": "2018-11-22T18:20:10.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"id": "6119722714965021",
+					"key": "KEYCLOAK_SESSION",
+					"lastAccessed": "2018-11-22T13:20:05.560Z",
+					"maxAge": 18000,
+					"path": "/auth/realms/ativa-demo/",
+					"value": "ativa-demo/9b692d28-2e28-44d9-9e76-1eb9aa87c060/77c2ea49-7652-4913-be7e-9fed32356854"
+				},
+				{
+					"creation": "2018-11-22T13:20:05.561Z",
+					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
+					"expires": "1970-01-01T00:00:10.000Z",
+					"extensions": [
+						"Version=1",
+						"Comment=Expiring cookie"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "5583061636057098",
+					"key": "KEYCLOAK_REMEMBER_ME",
+					"lastAccessed": "2018-11-22T13:20:05.561Z",
+					"maxAge": 0,
+					"path": "/auth/realms/ativa-demo/"
 				}
 			],
 			"created": 1539008053014,
-			"modified": 1542833274195,
+			"modified": 1542984283085,
 			"name": "Default Jar",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "cookie_jar"
@@ -75,72 +192,6 @@
 			"name": "Auth",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "request_group"
-		},
-		{
-			"_id": "fld_3716990b64634460a87a5a35a5c70da4",
-			"created": 1539614994829,
-			"description": "",
-			"environment": {},
-			"metaSortKey": -1539614994829,
-			"modified": 1539615022345,
-			"name": "Users",
-			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
-			"_type": "request_group"
-		},
-		{
-			"_id": "req_e5ef00bf29984d3fab592edc1af6f143",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\t\"codigoPessoa\": \"123456789\",\n\t\"nome\": \"Leonardo Sancho\",\n\t\"email\": \"drakeleo+teste@gmail.com\"\n}"
-			},
-			"created": 1539982031016,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_0308256a07c84aa9ac788aac6bb9b002",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1539982031017,
-			"method": "POST",
-			"modified": 1541517038224,
-			"name": "solicitar confirmacao email",
-			"parameters": [],
-			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "https://api-portal-investidor-hmg.ativacorretora.com.br:8080/cadastro/acessos/confirmar-email",
-			"_type": "request"
-		},
-		{
-			"_id": "req_3e3e9fb59828498a816ea33535e8c43b",
-			"authentication": {},
-			"body": {},
-			"created": 1542740256349,
-			"description": "",
-			"headers": [],
-			"isPrivate": false,
-			"metaSortKey": -1542740256349,
-			"method": "OPTIONS",
-			"modified": 1542740270109,
-			"name": "My Request",
-			"parameters": [],
-			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}",
-			"_type": "request"
 		},
 		{
 			"_id": "env_766e64e30ee54ce5b340f61104fb3793",
@@ -159,55 +210,318 @@
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1542893987720,
+			"modified": 1542626907200,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
 		},
 		{
-			"_id": "req_3178e1888bd740b08a4da352aff2b062",
+			"_id": "fld_3716990b64634460a87a5a35a5c70da4",
+			"created": 1539614994829,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1543003545134,
+			"modified": 1543003587492,
+			"name": "Users",
+			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
+			"created": 1542889444338,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1539113185048,
+			"modified": 1543003419983,
+			"name": "Token com provedor social",
+			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_a8603fdedc474b109ff8ec0d63bd14d0",
+			"created": 1543003095941,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1543003095941,
+			"modified": 1543003434869,
+			"name": "Token com provedor padrao",
+			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
+			"created": 1543003499992,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1543003499992,
+			"modified": 1543003514714,
+			"name": "Token de admin",
+			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_0972855d6a044c5aab0fa16f8f1af4f2",
+			"created": 1543003545084,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1543003545084,
+			"modified": 1543003545084,
+			"name": "Atualizacao do token",
+			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_3317db474acb487797f275355253515b",
 			"authentication": {
-				"disabled": false,
-				"password": "{{ front_client_secret  }}",
-				"type": "basic",
-				"username": "{{ front_client_id  }}"
+				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"authorizationUrl": "{{ admin_authorization_token_url  }}",
+				"clientId": "{{ admin_client_id  }}",
+				"clientSecret": "{{ admin_client_secret  }}",
+				"grantType": "password",
+				"password": "{{ admin_password  }}",
+				"redirectUrl": "",
+				"scope": "",
+				"tokenPrefix": "",
+				"type": "oauth2",
+				"username": "{{ admin_user  }}"
 			},
+			"body": {},
+			"created": 1539008832299,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_e1db2e74062547779e19fcc93f2f0b96",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539008832117.75,
+			"method": "GET",
+			"modified": 1543003669881,
+			"name": "Obter qtd de usuarios",
+			"parameters": [],
+			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/count",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4f2a9226d05b43ae86c4abad709499cc",
+			"authentication": {
+				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"authorizationUrl": "",
+				"clientId": "{{ admin_client_id  }}",
+				"clientSecret": "{{ admin_client_secret  }}",
+				"grantType": "password",
+				"password": "{{ admin_password  }}",
+				"type": "oauth2",
+				"username": "{{ admin_user  }}"
+			},
+			"body": {},
+			"created": 1539116035863,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1539008832192.75,
+			"method": "GET",
+			"modified": 1543003636510,
+			"name": "Obter usuario",
+			"parameters": [
+				{
+					"id": "pair_ad1755a617e041b38b0b5864bc64d315",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/33905810-c3f6-4cd9-a713-25aa4dee3891",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ed79ad57a6964c0480b5d50f255af341",
+			"authentication": {
+				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"authorizationUrl": "",
+				"clientId": "{{ admin_client_id  }}",
+				"clientSecret": "{{ admin_client_secret  }}",
+				"grantType": "password",
+				"password": "{{ admin_password  }}",
+				"type": "oauth2",
+				"username": "{{ admin_user  }}"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{ \n    \"temporary\": false,\n    \"type\": \"password\",\n    \"value\": \"123579\"\n}"
+			},
+			"created": 1539116210989,
+			"description": "Erro Expressao Regular:\n{\n\t\"error\": \"invalidPasswordRegexPatternMessage\",\n\t\"error_description\": \"Invalid password: fails to match regex pattern(s).\"\n}",
+			"headers": [
+				{
+					"id": "pair_7fe936a214d9469fa0bab9c974587dd9",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539008832167.75,
+			"method": "PUT",
+			"modified": 1543003666039,
+			"name": "Alterar senha usuario",
+			"parameters": [],
+			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/{id}/reset-password",
+			"_type": "request"
+		},
+		{
+			"_id": "req_93bb192183e648c2a7e2f50dd86c533f",
+			"authentication": {
+				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"authorizationUrl": "",
+				"clientId": "{{ admin_client_id  }}",
+				"clientSecret": "{{ admin_client_secret  }}",
+				"credentialsInBody": false,
+				"disabled": false,
+				"grantType": "password",
+				"password": "{{ admin_password  }}",
+				"scope": "",
+				"tokenPrefix": "",
+				"type": "oauth2",
+				"username": "{{ admin_user  }}"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"username\": \"jair\",\n\t\"enabled\": true,\n\t\"email\": \"bolsonaro@gmail.com\",\n\t\"firstName\": \"Jair\",\n\t\"lastName\": \"Bolsonaro\",\n\t\"credentials\": [\n\t\t{\n\t\t\t\"type\": \"password\",\n\t\t\t\"value\": \"135791\",\n\t\t\t\"temporary\": false\n\t\t}\n\t]\n}"
+			},
+			"created": 1539116731043,
+			"description": "Erro Usuario existente:\n{\n\t\"errorMessage\": \"User exists with same username\"\n}\n\nErro Email existente:\n{\n\t\"errorMessage\": \"User exists with same email\"\n}\n\nErro Expressao Regular:\n{\n\t\"errorMessage\": \"Could not create user\"\n}",
+			"headers": [
+				{
+					"id": "pair_9e6b696ae5fa4fe2910e47e10df23209",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539008832217.75,
+			"method": "POST",
+			"modified": 1543003626202,
+			"name": "Criar novo usuario",
+			"parameters": [],
+			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d3b0669f489b46d3b3699fb26d5ff4b6",
+			"authentication": {
+				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"authorizationUrl": "",
+				"clientId": "{{ admin_client_id  }}",
+				"clientSecret": "{{ admin_client_secret  }}",
+				"grantType": "password",
+				"password": "{{ admin_password  }}",
+				"type": "oauth2",
+				"username": "{{ admin_user  }}"
+			},
+			"body": {},
+			"created": 1542733073104,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1539008832180.25,
+			"method": "GET",
+			"modified": 1543003637265,
+			"name": "Listar usuarios",
+			"parameters": [
+				{
+					"id": "pair_ad1755a617e041b38b0b5864bc64d315",
+					"name": "email",
+					"value": "bolsonaro@gmail.com"
+				}
+			],
+			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_22562bf339854a45957afd354c15bd2a",
+			"authentication": {},
 			"body": {
 				"mimeType": "application/x-www-form-urlencoded",
 				"params": [
 					{
-						"id": "pair_6352cd8bf15b4f6c9cf77f69c98353db",
+						"id": "pair_0b190d95df754eacbb4de386c0b63674",
 						"name": "grant_type",
-						"value": "client_credentials"
+						"value": "password"
 					},
 					{
-						"id": "pair_d3a34f9c2e2b41a0a18180f7fc2e5f09",
+						"id": "pair_b096faf44aab41df855691546e1f0bd4",
+						"name": "username",
+						"value": "markus.muratore@resourceit.com"
+					},
+					{
+						"id": "pair_05790dabc7794c3fa816fe9733826fbb",
+						"name": "password",
+						"value": "135791"
+					},
+					{
+						"id": "pair_cc7663e01ed2472c9af399f9549162fb",
 						"name": "client_id",
-						"value": "{{ front_client_id  }}"
+						"value": "account"
 					},
 					{
-						"id": "pair_dc4f42d96b9f4f3e8dd3788ae88e7160",
-						"name": "state",
-						"value": "{% uuid 'v4' %}"
+						"id": "pair_3ef074ce6b274b92b4ec48ae50d70b87",
+						"name": "client_secret",
+						"value": "f3d75553-ec93-44da-b1b8-9e18f69fb404"
 					}
 				]
 			},
-			"created": 1539017243980,
+			"created": 1542820882752,
 			"description": "",
 			"headers": [
 				{
-					"id": "pair_2f4646a7ac5a48348c0bb224570b8e6d",
+					"id": "pair_3e0dcfc684224d3ca4524cc138f0a46f",
 					"name": "Content-Type",
 					"value": "application/x-www-form-urlencoded"
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1539017243980,
+			"metaSortKey": -1539113185098,
 			"method": "POST",
-			"modified": 1542731437952,
-			"name": "Obter token (service account)",
+			"modified": 1543002629913,
+			"name": "token for an impersonator",
 			"parameters": [],
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingMaxTimelineDataSize": 1000,
@@ -215,6 +529,82 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
+			"_type": "request"
+		},
+		{
+			"_id": "req_072725e38cf5435886b326d25b307063",
+			"authentication": {
+				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"authorizationUrl": "",
+				"clientId": "{{ admin_client_id  }}",
+				"clientSecret": "{{ admin_client_secret  }}",
+				"grantType": "password",
+				"password": "{{ admin_password  }}",
+				"type": "oauth2",
+				"username": "{{ admin_user  }}"
+			},
+			"body": {},
+			"created": 1542889433123,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1539113185048,
+			"method": "POST",
+			"modified": 1542904472896,
+			"name": "impersonateUser",
+			"parameters": [],
+			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/9b692d28-2e28-44d9-9e76-1eb9aa87c060/impersonation",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c5d0ca0e8b9c41aea7e5c3314c99ee57",
+			"authentication": {},
+			"body": {},
+			"created": 1542890047092,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1539113185023,
+			"method": "GET",
+			"modified": 1542904473923,
+			"name": "obtainTokenBasedOnIdentity",
+			"parameters": [
+				{
+					"id": "pair_2f375d4e6628441cbe9df7ac12755ad4",
+					"name": "response_mode",
+					"value": "fragment"
+				},
+				{
+					"id": "pair_add790b82945458292703d440b3d0c3d",
+					"name": "response_type",
+					"value": "token"
+				},
+				{
+					"id": "pair_6023c27e56944b049550a6b9b57f96b8",
+					"name": "client_id",
+					"value": "{{ front_client_id  }}"
+				},
+				{
+					"id": "pair_69f5213816a3407fbc6a978856fd0670",
+					"name": "client_secret",
+					"value": "{{ front_client_secret  }}"
+				}
+			],
+			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/auth",
 			"_type": "request"
 		},
 		{
@@ -246,12 +636,7 @@
 					{
 						"id": "pair_f20aab18ac4e457c8782ae534bea6bf0",
 						"name": "password",
-						"value": "136801"
-					},
-					{
-						"id": "pair_692c5a3176d845c6914cadc2a727c1c8",
-						"name": "",
-						"value": ""
+						"value": "135791"
 					}
 				]
 			},
@@ -267,10 +652,69 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113184998,
 			"method": "POST",
-			"modified": 1542833268369,
+			"modified": 1543003340734,
 			"name": "Obter token (usuario e senha)",
 			"parameters": [],
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"parentId": "fld_a8603fdedc474b109ff8ec0d63bd14d0",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3178e1888bd740b08a4da352aff2b062",
+			"authentication": {
+				"disabled": false,
+				"password": "{{ front_client_secret  }}",
+				"type": "basic",
+				"username": "{{ front_client_id  }}"
+			},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_6352cd8bf15b4f6c9cf77f69c98353db",
+						"name": "grant_type",
+						"value": "client_credentials"
+					}
+				]
+			},
+			"created": 1539017243980,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_2f4646a7ac5a48348c0bb224570b8e6d",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1539017243980,
+			"method": "POST",
+			"modified": 1543003507001,
+			"name": "Obter token (service account)",
+			"parameters": [
+				{
+					"id": "pair_942af8be209d42cbb9a099afb07e157e",
+					"name": "response_type",
+					"value": "code"
+				},
+				{
+					"id": "pair_1dcb862f20944b2ca63fb58d896f3c92",
+					"name": "client_id",
+					"value": "{{ front_client_id  }}"
+				},
+				{
+					"id": "pair_00779d4b36654506b4338c7ef8a739fa",
+					"name": "state",
+					"value": "{% uuid 'v4' %}"
+				}
+			],
+			"parentId": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingMaxTimelineDataSize": 1000,
@@ -323,12 +767,12 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1539010935158.3125,
+			"metaSortKey": -1539017244030,
 			"method": "POST",
-			"modified": 1542893988332,
+			"modified": 1543003508984,
 			"name": "Obter token (admin)",
 			"parameters": [],
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"parentId": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingMaxTimelineDataSize": 1000,
@@ -336,112 +780,6 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-			"_type": "request"
-		},
-		{
-			"_id": "req_2b842fe21d3a40ef8fda664970b81379",
-			"authentication": {
-				"disabled": false,
-				"password": "{{ front_client_secret  }}",
-				"type": "basic",
-				"username": "{{ front_client_id  }}"
-			},
-			"body": {
-				"mimeType": "application/x-www-form-urlencoded",
-				"params": [
-					{
-						"id": "pair_6352cd8bf15b4f6c9cf77f69c98353db",
-						"name": "grant_type",
-						"value": "client_credentials"
-					},
-					{
-						"id": "pair_d3a34f9c2e2b41a0a18180f7fc2e5f09",
-						"name": "client_id",
-						"value": "{{ front_client_id  }}"
-					},
-					{
-						"id": "pair_dc4f42d96b9f4f3e8dd3788ae88e7160",
-						"name": "state",
-						"value": "{% uuid 'v4' %}"
-					}
-				]
-			},
-			"created": 1542731446870,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_2f4646a7ac5a48348c0bb224570b8e6d",
-					"name": "Content-Type",
-					"value": "application/x-www-form-urlencoded"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1539065214489,
-			"method": "POST",
-			"modified": 1542732578114,
-			"name": "Pedir autorizacao (usuario social)",
-			"parameters": [],
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/auth",
-			"_type": "request"
-		},
-		{
-			"_id": "req_e9962683ad324996a91588a4e104378f",
-			"authentication": {
-				"disabled": false,
-				"password": "{{ front_client_secret  }}",
-				"type": "basic",
-				"username": "{{ front_client_id  }}"
-			},
-			"body": {
-				"mimeType": "application/x-www-form-urlencoded",
-				"params": [
-					{
-						"id": "pair_6352cd8bf15b4f6c9cf77f69c98353db",
-						"name": "grant_type",
-						"value": "client_credentials"
-					},
-					{
-						"id": "pair_d3a34f9c2e2b41a0a18180f7fc2e5f09",
-						"name": "client_id",
-						"value": "{{ front_client_id  }}"
-					},
-					{
-						"id": "pair_dc4f42d96b9f4f3e8dd3788ae88e7160",
-						"name": "state",
-						"value": "{% uuid 'v4' %}"
-					}
-				]
-			},
-			"created": 1542732511858,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_2f4646a7ac5a48348c0bb224570b8e6d",
-					"name": "Content-Type",
-					"value": "application/x-www-form-urlencoded"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1539041229234.5,
-			"method": "POST",
-			"modified": 1542732523811,
-			"name": "Obter token (usuario social) (Copy)",
-			"parameters": [],
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
 			"_type": "request"
 		},
 		{
@@ -468,7 +806,7 @@
 					{
 						"id": "pair_7d8472499d684fc99ad03dc4bf8d0134",
 						"name": "refresh_token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1ZGY4ZDYxYy02ZjE4LTQ5MjctOGZlZC1hNzgyMmUwMzk3ZjEifQ.eyJqdGkiOiI2NDAyODRjOS1jYTVjLTRjMjQtOTVlMC1iMzAyZDU4ODQxZWUiLCJleHAiOjE1NDI4MDk5NjgsIm5iZiI6MCwiaWF0IjoxNTQyODA4MTY4LCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwiYXVkIjoiZnJvbnQtY2FkYXN0cm8iLCJzdWIiOiJkZGU3ZWUwMC1jMTlkLTQwN2QtYjdlYi1iODlhNDRmYjllMTciLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiZnJvbnQtY2FkYXN0cm8iLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiI5NDVmM2VkYy0zYmRlLTQ3M2EtOWU1NS0zOTQ0NWQwZjI2MTUiLCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIn0.lWVKo0XDciFOgQGGXExPMmAeyQtJpW3K7caudrF3Mkc"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1ZGY4ZDYxYy02ZjE4LTQ5MjctOGZlZC1hNzgyMmUwMzk3ZjEifQ.eyJqdGkiOiIzYWMyM2FiNC02OGEyLTQ0MTQtOTBlOS1jM2ZkNGNiZTgwZjciLCJleHAiOjE1NDI5ODA4MTAsIm5iZiI6MCwiaWF0IjoxNTQyOTc5NjEwLCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwiYXVkIjoiZnJvbnQtY2FkYXN0cm8iLCJzdWIiOiI2N2NlODYxNS1hN2RjLTQ0OWItYmIxNS00ZGQyYzBkNzRjZGIiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiZnJvbnQtY2FkYXN0cm8iLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJmMTNkYWVlNy1jM2YwLTRiYjgtYWVkNi02NGNjNjY5ZmMwYTYiLCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIn0.AH7WVRlQsOvE2W7ArfS8q9-_iMrd-7vZgbpiwZiOyHE"
 					}
 				]
 			},
@@ -484,10 +822,10 @@
 			"isPrivate": false,
 			"metaSortKey": -1539089199743.5,
 			"method": "POST",
-			"modified": 1542808176236,
+			"modified": 1543003547133,
 			"name": "Obter token (refresh token)",
 			"parameters": [],
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"parentId": "fld_0972855d6a044c5aab0fa16f8f1af4f2",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingMaxTimelineDataSize": 1000,
@@ -495,209 +833,6 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
-			"_type": "request"
-		},
-		{
-			"_id": "req_3317db474acb487797f275355253515b",
-			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-				"authorizationUrl": "{{ admin_authorization_token_url  }}",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
-				"grantType": "password",
-				"password": "{{ admin_password  }}",
-				"redirectUrl": "",
-				"scope": "",
-				"tokenPrefix": "",
-				"type": "oauth2",
-				"username": "{{ admin_user  }}"
-			},
-			"body": {},
-			"created": 1539008832299,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_e1db2e74062547779e19fcc93f2f0b96",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1539008832117.75,
-			"method": "GET",
-			"modified": 1542733092839,
-			"name": "Obter qtd de usuarios",
-			"parameters": [],
-			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/count",
-			"_type": "request"
-		},
-		{
-			"_id": "req_4f2a9226d05b43ae86c4abad709499cc",
-			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
-				"grantType": "password",
-				"password": "{{ admin_password  }}",
-				"type": "oauth2",
-				"username": "{{ admin_user  }}"
-			},
-			"body": {},
-			"created": 1539116035863,
-			"description": "",
-			"headers": [],
-			"isPrivate": false,
-			"metaSortKey": -1539008832192.75,
-			"method": "GET",
-			"modified": 1542740258894,
-			"name": "Obter usuario",
-			"parameters": [
-				{
-					"id": "pair_ad1755a617e041b38b0b5864bc64d315",
-					"name": "",
-					"value": ""
-				}
-			],
-			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/33905810-c3f6-4cd9-a713-25aa4dee3891",
-			"_type": "request"
-		},
-		{
-			"_id": "req_ed79ad57a6964c0480b5d50f255af341",
-			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
-				"grantType": "password",
-				"password": "{{ admin_password  }}",
-				"type": "oauth2",
-				"username": "{{ admin_user  }}"
-			},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{ \n    \"temporary\": false,\n    \"type\": \"password\",\n    \"value\": \"123579\"\n}"
-			},
-			"created": 1539116210989,
-			"description": "Erro Expressao Regular:\n{\n\t\"error\": \"invalidPasswordRegexPatternMessage\",\n\t\"error_description\": \"Invalid password: fails to match regex pattern(s).\"\n}",
-			"headers": [
-				{
-					"id": "pair_7fe936a214d9469fa0bab9c974587dd9",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1539008832167.75,
-			"method": "PUT",
-			"modified": 1542642910904,
-			"name": "Alterar senha usuario",
-			"parameters": [],
-			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/{{ test_user_id  }}/reset-password",
-			"_type": "request"
-		},
-		{
-			"_id": "req_93bb192183e648c2a7e2f50dd86c533f",
-			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
-				"credentialsInBody": false,
-				"disabled": false,
-				"grantType": "password",
-				"password": "{{ admin_password  }}",
-				"scope": "",
-				"tokenPrefix": "",
-				"type": "oauth2",
-				"username": "{{ admin_user  }}"
-			},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\t\"username\": \"jair\",\n\t\"enabled\": true,\n\t\"email\": \"bolsonaro@gmail.com\",\n\t\"firstName\": \"Jair\",\n\t\"lastName\": \"Bolsonaro\",\n\t\"credentials\": [\n\t\t{\n\t\t\t\"type\": \"password\",\n\t\t\t\"value\": \"136801\",\n\t\t\t\"temporary\": false\n\t\t}\n\t]\n}"
-			},
-			"created": 1539116731043,
-			"description": "Erro Usuario existente:\n{\n\t\"errorMessage\": \"User exists with same username\"\n}\n\nErro Email existente:\n{\n\t\"errorMessage\": \"User exists with same email\"\n}\n\nErro Expressao Regular:\n{\n\t\"errorMessage\": \"Could not create user\"\n}",
-			"headers": [
-				{
-					"id": "pair_9e6b696ae5fa4fe2910e47e10df23209",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1539008832217.75,
-			"method": "POST",
-			"modified": 1542805314861,
-			"name": "Criar novo usuario (admin-cli)",
-			"parameters": [],
-			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users",
-			"_type": "request"
-		},
-		{
-			"_id": "req_d3b0669f489b46d3b3699fb26d5ff4b6",
-			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
-				"grantType": "password",
-				"password": "{{ admin_password  }}",
-				"type": "oauth2",
-				"username": "{{ admin_user  }}"
-			},
-			"body": {},
-			"created": 1542733073104,
-			"description": "",
-			"headers": [],
-			"isPrivate": false,
-			"metaSortKey": -1539008832180.25,
-			"method": "GET",
-			"modified": 1542734483959,
-			"name": "Listar usuarios",
-			"parameters": [
-				{
-					"id": "pair_ad1755a617e041b38b0b5864bc64d315",
-					"name": "email",
-					"value": "bolsonaro@gmail.com"
-				}
-			],
-			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/",
 			"_type": "request"
 		}
 	]
