@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-23T20:08:08.695Z",
+	"__export_date": "2018-11-23T20:15:49.027Z",
 	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
@@ -27,157 +27,9 @@
 		},
 		{
 			"_id": "jar_b71c8c3c1fef4352b0f1a1f7d3aac54a",
-			"cookies": [
-				{
-					"creation": "2018-10-15T14:52:03.210Z",
-					"domain": "resource-dev.ativacorretora.com.br",
-					"expires": "1970-01-01T00:00:10.000Z",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "06669356766018719",
-					"key": "KC_RESTART",
-					"lastAccessed": "2018-11-23T13:26:32.753Z",
-					"maxAge": 0,
-					"path": "/auth/realms/master/"
-				},
-				{
-					"creation": "2018-10-15T14:54:34.655Z",
-					"domain": "resource-dev.ativacorretora.com.br",
-					"expires": "1970-01-01T00:00:10.000Z",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "534539303073539",
-					"key": "KC_RESTART",
-					"lastAccessed": "2018-11-23T14:44:43.082Z",
-					"maxAge": 0,
-					"path": "/auth/realms/ativa-demo/"
-				},
-				{
-					"creation": "2018-11-21T18:25:53.387Z",
-					"domain": "resource-dev.ativacorretora.com.br",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "8296304760082696",
-					"key": "AUTH_SESSION_ID",
-					"lastAccessed": "2018-11-21T18:25:53.387Z",
-					"path": "/auth/realms/ativa-demo/",
-					"value": "3404209d-c086-4bc8-8965-46cbaef0dcda.1aefed5ab831"
-				},
-				{
-					"creation": "2018-11-22T12:33:35.514Z",
-					"domain": "resource-dev.ativacorretora.com.br",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "05879078333069465",
-					"key": "KEYCLOAK_IDENTITY",
-					"lastAccessed": "2018-11-22T13:01:12.839Z",
-					"path": "/auth/realms/ativa-demo/",
-					"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1ZGY4ZDYxYy02ZjE4LTQ5MjctOGZlZC1hNzgyMmUwMzk3ZjEifQ.eyJqdGkiOiIyZmNmYWIzYi1lODUwLTQxZTAtYmYwMS03ZTQ0Y2ZjMWQ5N2YiLCJleHAiOjE1NDI5MDk2NzgsIm5iZiI6MCwiaWF0IjoxNTQyODkxNjc4LCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwic3ViIjoiOWI2OTJkMjgtMmUyOC00NGQ5LTllNzYtMWViOWFhODdjMDYwIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNzdjMmVhNDktNzY1Mi00OTEzLWJlN2UtOWZlZDMyMzU2ODU0IiwicmVzb3VyY2VfYWNjZXNzIjp7fSwic3RhdGVfY2hlY2tlciI6IndiVk92NldiZW44aVRlcVFBVUh4MFhpTVVKUHplNm05RURocXZPVE5mMGsifQ.-iUs3qOJp8VgU5wpalKjV3vvGubghu1OWg7HOJ5pCpM"
-				},
-				{
-					"creation": "2018-11-22T12:33:35.514Z",
-					"domain": "resource-dev.ativacorretora.com.br",
-					"expires": "2018-11-22T18:01:18.000Z",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"id": "7538595777444979",
-					"key": "KEYCLOAK_SESSION",
-					"lastAccessed": "2018-11-22T13:01:12.840Z",
-					"maxAge": 18000,
-					"path": "/auth/realms/ativa-demo/",
-					"value": "ativa-demo/9b692d28-2e28-44d9-9e76-1eb9aa87c060/77c2ea49-7652-4913-be7e-9fed32356854"
-				},
-				{
-					"creation": "2018-11-22T13:20:05.559Z",
-					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "5126500947646813",
-					"key": "AUTH_SESSION_ID",
-					"lastAccessed": "2018-11-22T13:20:05.559Z",
-					"path": "/auth/realms/ativa-demo/",
-					"value": "fa37ee50-9a30-4de5-a829-d22e0f3e1bbd.1aefed5ab831"
-				},
-				{
-					"creation": "2018-11-22T13:20:05.559Z",
-					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
-					"expires": "1970-01-01T00:00:10.000Z",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "6126873648429445",
-					"key": "KC_RESTART",
-					"lastAccessed": "2018-11-22T13:20:05.559Z",
-					"maxAge": 0,
-					"path": "/auth/realms/ativa-demo/"
-				},
-				{
-					"creation": "2018-11-22T13:20:05.560Z",
-					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "7568107967424942",
-					"key": "KEYCLOAK_IDENTITY",
-					"lastAccessed": "2018-11-22T13:20:05.560Z",
-					"path": "/auth/realms/ativa-demo/",
-					"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1ZGY4ZDYxYy02ZjE4LTQ5MjctOGZlZC1hNzgyMmUwMzk3ZjEifQ.eyJqdGkiOiI3NzVmMzU0OS00YTE3LTRmYmUtOGRmMy1jMjEzNDZkMmUxMmYiLCJleHAiOjE1NDI5MTA4MTAsIm5iZiI6MCwiaWF0IjoxNTQyODkyODEwLCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwic3ViIjoiOWI2OTJkMjgtMmUyOC00NGQ5LTllNzYtMWViOWFhODdjMDYwIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNzdjMmVhNDktNzY1Mi00OTEzLWJlN2UtOWZlZDMyMzU2ODU0IiwicmVzb3VyY2VfYWNjZXNzIjp7fSwic3RhdGVfY2hlY2tlciI6IndiVk92NldiZW44aVRlcVFBVUh4MFhpTVVKUHplNm05RURocXZPVE5mMGsifQ.H0aNDMeW9aQkiFUYooL_f1N_dF6Ybfz-u5YZMqYIpvA"
-				},
-				{
-					"creation": "2018-11-22T13:20:05.560Z",
-					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
-					"expires": "2018-11-22T18:20:10.000Z",
-					"extensions": [
-						"Version=1"
-					],
-					"hostOnly": true,
-					"id": "6119722714965021",
-					"key": "KEYCLOAK_SESSION",
-					"lastAccessed": "2018-11-22T13:20:05.560Z",
-					"maxAge": 18000,
-					"path": "/auth/realms/ativa-demo/",
-					"value": "ativa-demo/9b692d28-2e28-44d9-9e76-1eb9aa87c060/77c2ea49-7652-4913-be7e-9fed32356854"
-				},
-				{
-					"creation": "2018-11-22T13:20:05.561Z",
-					"domain": "api-portal-investidor-hmg.ativacorretora.com.br",
-					"expires": "1970-01-01T00:00:10.000Z",
-					"extensions": [
-						"Version=1",
-						"Comment=Expiring cookie"
-					],
-					"hostOnly": true,
-					"httpOnly": true,
-					"id": "5583061636057098",
-					"key": "KEYCLOAK_REMEMBER_ME",
-					"lastAccessed": "2018-11-22T13:20:05.561Z",
-					"maxAge": 0,
-					"path": "/auth/realms/ativa-demo/"
-				}
-			],
+			"cookies": [],
 			"created": 1539008053014,
-			"modified": 1542984283085,
+			"modified": 1543004131236,
 			"name": "Default Jar",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "cookie_jar"
@@ -298,7 +150,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832117.75,
 			"method": "GET",
-			"modified": 1543003669881,
+			"modified": 1543004102980,
 			"name": "Obter qtd de usuarios",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -330,7 +182,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832192.75,
 			"method": "GET",
-			"modified": 1543003636510,
+			"modified": 1543004101463,
 			"name": "Obter usuario",
 			"parameters": [
 				{
@@ -377,7 +229,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832167.75,
 			"method": "PUT",
-			"modified": 1543003666039,
+			"modified": 1543004102492,
 			"name": "Alterar senha usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -422,7 +274,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832217.75,
 			"method": "POST",
-			"modified": 1543003626202,
+			"modified": 1543004098890,
 			"name": "Criar novo usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -454,7 +306,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832180.25,
 			"method": "GET",
-			"modified": 1543003637265,
+			"modified": 1543004102002,
 			"name": "Listar usuarios",
 			"parameters": [
 				{
@@ -518,7 +370,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113185098,
 			"method": "POST",
-			"modified": 1543002629913,
+			"modified": 1543004124913,
 			"name": "token for an impersonator",
 			"parameters": [],
 			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
@@ -550,7 +402,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113185048,
 			"method": "POST",
-			"modified": 1542904472896,
+			"modified": 1543004123180,
 			"name": "impersonateUser",
 			"parameters": [],
 			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
@@ -573,7 +425,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113185023,
 			"method": "GET",
-			"modified": 1542904473923,
+			"modified": 1543004123773,
 			"name": "obtainTokenBasedOnIdentity",
 			"parameters": [
 				{
@@ -652,7 +504,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113184998,
 			"method": "POST",
-			"modified": 1543003340734,
+			"modified": 1543004125470,
 			"name": "Obter token (usuario e senha)",
 			"parameters": [],
 			"parentId": "fld_a8603fdedc474b109ff8ec0d63bd14d0",
@@ -680,6 +532,16 @@
 						"id": "pair_6352cd8bf15b4f6c9cf77f69c98353db",
 						"name": "grant_type",
 						"value": "client_credentials"
+					},
+					{
+						"id": "pair_d3a34f9c2e2b41a0a18180f7fc2e5f09",
+						"name": "client_id",
+						"value": "{{ front_client_id  }}"
+					},
+					{
+						"id": "pair_dc4f42d96b9f4f3e8dd3788ae88e7160",
+						"name": "state",
+						"value": "{% uuid 'v4' %}"
 					}
 				]
 			},
@@ -695,25 +557,9 @@
 			"isPrivate": false,
 			"metaSortKey": -1539017243980,
 			"method": "POST",
-			"modified": 1543003507001,
+			"modified": 1543004116747,
 			"name": "Obter token (service account)",
-			"parameters": [
-				{
-					"id": "pair_942af8be209d42cbb9a099afb07e157e",
-					"name": "response_type",
-					"value": "code"
-				},
-				{
-					"id": "pair_1dcb862f20944b2ca63fb58d896f3c92",
-					"name": "client_id",
-					"value": "{{ front_client_id  }}"
-				},
-				{
-					"id": "pair_00779d4b36654506b4338c7ef8a739fa",
-					"name": "state",
-					"value": "{% uuid 'v4' %}"
-				}
-			],
+			"parameters": [],
 			"parentId": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
@@ -769,7 +615,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539017244030,
 			"method": "POST",
-			"modified": 1543003508984,
+			"modified": 1543004113470,
 			"name": "Obter token (admin)",
 			"parameters": [],
 			"parentId": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
@@ -822,7 +668,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539089199743.5,
 			"method": "POST",
-			"modified": 1543003547133,
+			"modified": 1543004108693,
 			"name": "Obter token (refresh token)",
 			"parameters": [],
 			"parentId": "fld_0972855d6a044c5aab0fa16f8f1af4f2",
