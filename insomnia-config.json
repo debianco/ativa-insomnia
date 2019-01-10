@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-09T13:00:31.788Z",
+	"__export_date": "2019-01-10T16:36:57.524Z",
 	"__export_source": "insomnia.desktop.app:v6.3.1",
 	"resources": [
 		{
@@ -870,7 +870,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"enderecos\": [ {\n\t\t\"cep\": \"01325000\",\n\t\t\"logradouro\": \"Avenida Paulista zika\",\n\t\t\"numero\": \"460\",\n\t\t\"complemento\": \"5º andar\",\n\t\t\"bairro\": \"bela vista\",\n\t\t\"cidade\": \"Sao Paulo\",\n\t\t\"estado\": \"SP\",\n\t\t\"pais\": \"Brasil\"\n\t} ]\n}"
+				"text": "{\n\t\"atualizar\": \"endereco\",\n\t\"enderecos\": [ {\n\t\t\"cep\": \"01325000\",\n\t\t\"logradouro\": \"Avenida Paulista Zika da Leste\",\n\t\t\"numero\": \"460\",\n\t\t\"complemento\": \"5º andar\",\n\t\t\"bairro\": \"bela vista\",\n\t\t\"cidade\": \"Sao Paulo\",\n\t\t\"estado\": \"SP\",\n\t\t\"pais\": \"Brasil\"\n\t} ]\n}"
 			},
 			"created": 1546891134307,
 			"description": "",
@@ -883,8 +883,8 @@
 			],
 			"isPrivate": false,
 			"metaSortKey": -1546928564074,
-			"method": "POST",
-			"modified": 1546975436707,
+			"method": "PATCH",
+			"modified": 1547138057997,
 			"name": "Endereço",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -894,7 +894,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoa/atualizar-enderecos",
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
 			"_type": "request"
 		},
 		{
@@ -902,7 +902,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"codigoProfissao\": \"234\",\n\t\"nomeEmpresa\": \"Resource Company Ltda\"\n}"
+				"text": "{\n\t\"atualizar\": \"profissao\",\n\t\"codigoProfissao\": \"234\",\n\t\"nomeEmpresa\": \"Resource Company Ltda\"\n}"
 			},
 			"created": 1546966040684,
 			"description": "",
@@ -915,9 +915,9 @@
 			],
 			"isPrivate": false,
 			"metaSortKey": -1546966040684,
-			"method": "POST",
-			"modified": 1546975447134,
-			"name": "Dados Profissionais",
+			"method": "PATCH",
+			"modified": 1547136542608,
+			"name": "Profissao",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
 			"settingDisableRenderRequestBody": false,
@@ -926,7 +926,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoa/atualizar-profissao",
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
 			"_type": "request"
 		},
 		{
@@ -934,7 +934,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"assessor\": {\n\t\t\"codigo\": \"453432\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"assessor\",\n\t\"assessor\": {\n\t\t\"codigo\": \"45343\"\n\t}\n}"
 			},
 			"created": 1546976815978,
 			"description": "",
@@ -947,8 +947,8 @@
 			],
 			"isPrivate": false,
 			"metaSortKey": -1546976815978,
-			"method": "POST",
-			"modified": 1546984632506,
+			"method": "PATCH",
+			"modified": 1547136540612,
 			"name": "Assessor",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -958,7 +958,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoa/atualizar-assessor",
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
 			"_type": "request"
 		},
 		{
@@ -966,7 +966,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"documentos\": [\n\t\t{\n\t\t\t\"documento\": \"400459588866\",\n\t\t\t\"dataExpedicao\": \"2014-09-03T12:13:16.0402932-03:00\"\n\t\t}\n\t]\n}"
+				"text": "{\n\t\"atualizar\": \"documentos\",\n\t\"documentos\": [\n\t\t{\n\t\t\t\"documento\": \"400459588866\",\n\t\t\t\"tipoDocumento\": 0,\n\t\t\t\"orgaoEmissor\": 0,\n\t\t\t\"dataExpedicao\": \"2014-09-03T12:13:16.0402932-03:00\"\n\t\t}\n\t]\n}"
 			},
 			"created": 1546983485531,
 			"description": "",
@@ -979,8 +979,8 @@
 			],
 			"isPrivate": false,
 			"metaSortKey": -1546983485531,
-			"method": "POST",
-			"modified": 1547038559490,
+			"method": "PATCH",
+			"modified": 1547136538629,
 			"name": "Documentos",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -990,7 +990,103 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoa/atualizar-documentos",
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
+			"_type": "request"
+		},
+		{
+			"_id": "req_deafaa591d914f0dbc7e42ecc926d4f5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"procurador\",\n\t\"procurador\": {\n\t\t\"nome\": \"Jorge Bolsonaro Dunha\",\n\t\t\"documento\": \"457392191\",\n\t\t\"tipoDocumento\": 1,\n\t\t\"email\": \"jorge@bolsonaro.com.br\"\n\t}\n}"
+			},
+			"created": 1547042338236,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0720e40adfac409f812874d9f884870b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547042338236,
+			"method": "PATCH",
+			"modified": 1547136536709,
+			"name": "Procurador",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c24e983f1bd4452cadf551e859692814",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"identificacao\",\n\t\"documento\": \"40045958866\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Joana da Penha\",\n\t\"nomeSocial\": \"Maria Joana\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2014-09-03T12:13:16.0402932-03:00\",\n\t\"nacionalidade\": \"Brasil\",\n\t\"naturalidade\": \"brasileiro\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Conjuge da Joana\",\t\n\t\"nomeMae\": \"Mae da Joana\",\t\n\t\"nomePai\": \"Pai da Joana\",\n\t\"uf\": \"SP\"\n}"
+			},
+			"created": 1547064712824,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_e889f4d042f84512b4b12bad738e007b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547064712824,
+			"method": "PATCH",
+			"modified": 1547136532318,
+			"name": "Identificacao",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
+			"_type": "request"
+		},
+		{
+			"_id": "req_523a1216f45b4511a1acee68d3f620de",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"contatos\",\n\t\"telefonePrincipal\": \"11970711409\",\n\t\"telefoneAlternativo\": \"1126730539\",\n\t\"emailAlternativo\": \"dunha@gmail.com\"\n}"
+			},
+			"created": 1547137205994,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_defeea0d463f42998a1c7ffecc54db26",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137205994,
+			"method": "PATCH",
+			"modified": 1547137355623,
+			"name": "Contatos",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://localhost:3000/pessoa/atualizar/562d388a-df39-40ef-95c0-414a9dee4041",
 			"_type": "request"
 		}
 	]
