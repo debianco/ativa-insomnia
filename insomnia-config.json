@@ -1,8 +1,8 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-14T13:07:48.127Z",
-	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"__export_date": "2019-01-14T16:45:32.716Z",
+	"__export_source": "insomnia.desktop.app:v6.3.1",
 	"resources": [
 		{
 			"_id": "wrk_ddc05b32652a43a2b14929e20555da74",
@@ -44,42 +44,6 @@
 			"name": "Auth",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "request_group"
-		},
-		{
-			"_id": "req_2d458fc44f3f4eb799606fc94da8fe32",
-			"authentication": {
-				"prefix": "",
-				"token": "eyJhbGciOiJFUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXVGRqQ01mdlQ0emhPX1U0UlI4aUhwY2RFWU5ON0lOUFhmTndVVkVLUEVjIn0.eyJqdGkiOiI5NWQ4MTZhMy1iZmU2LTQ1MjQtOWUxZC0yMzUwODliZTIyZTUiLCJleHAiOjE1NDMyNzEzNjYsIm5iZiI6MCwiaWF0IjoxNTQzMjcwNDY2LCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwiYXVkIjoiZnJvbnQtY2FkYXN0cm8iLCJzdWIiOiJkYjE2ZWU3Mi0xYjQ5LTQ0MzEtYjVhYy1lNmM4MjgzYzZjMzgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmcm9udC1jYWRhc3RybyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjlhNDM3ZTc4LWNjYWQtNDFiYy1hNTAwLWM1MzU5OTNmNTJmNyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9hcGktcG9ydGFsLWludmVzdGlkb3ItaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5icjo4MDgwLyoiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkphaXIgQm9sc29uYXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiamFpckBnbWFpbC5jb20iLCJnaXZlbl9uYW1lIjoiSmFpciIsImZhbWlseV9uYW1lIjoiQm9sc29uYXJvIiwiZW1haWwiOiJib2xzb25hcm9AZ21haWwuY29tIn0.MEQCICucjV0JwpyxRYabUZPKD-IfgSEEaJx1nglI--4EnafwAiAkwTrhrq2IYDrx99hBMsfPU58nwevB9TdCVXW7qYsqTg",
-				"type": "bearer"
-			},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"documento\": \"96152775418\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Fredrick Zulauf\",\n\t\"nomeSocial\": \"Fredrick\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2011-09-13T12:13:16.0402932-03:00\",\n\t\"nacionalidade\": \"brasileira\",\n\t\"naturalidade\": \"brasil - SP\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Everardo Keebler\",\n\t\"nomeMae\": \"Jenna Stracke\",\n\t\"nomePai\": \"Sergio Frami\"\n}"
-			},
-			"created": 1543242507784,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_5944206c18ee48659c877582b857d4a3",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1543242507784,
-			"method": "POST",
-			"modified": 1547052828457,
-			"name": "teste",
-			"parameters": [],
-			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoa/atualizar-identificacao",
-			"_type": "request"
 		},
 		{
 			"_id": "env_766e64e30ee54ce5b340f61104fb3793",
@@ -1047,6 +1011,39 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "fld_f42c06c5127e49b692ebb34740b62635",
+			"created": 1547483991024,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547469912825,
+			"modified": 1547484025808,
+			"name": "Acesso",
+			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_45d2b0462f214a23a45635ac2be03031",
+			"created": 1546965993841,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547469912825,
+			"modified": 1547484069402,
+			"name": "Criar/Atualizar",
+			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
+			"created": 1547469931338,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547469931338,
+			"modified": 1547469931338,
+			"name": "Obter",
+			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
+			"_type": "request_group"
+		},
+		{
 			"_id": "req_50a3a88d88c34910b2eb8a6b457a77f2",
 			"authentication": {},
 			"body": {},
@@ -1054,12 +1051,12 @@
 			"description": "",
 			"headers": [],
 			"isPrivate": false,
-			"metaSortKey": -1543268633002,
+			"metaSortKey": -1545170066871,
 			"method": "GET",
-			"modified": 1547471079423,
+			"modified": 1547484046811,
 			"name": "Testar guard",
 			"parameters": [],
-			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"parentId": "fld_f42c06c5127e49b692ebb34740b62635",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingMaxTimelineDataSize": 1000,
@@ -1067,6 +1064,38 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/auth/only-authenticated",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f76e06813a774fde82af8a8b6ac4e043",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"name\": \"Alexandre Veronezi\",\n\t\"provider\": \"google\",\n\t\"providerToken\": \"ya29.Gl15BqMAiIjs5VRrsvBETkx1V-AVfjf0ei33LyM1-IwrI3NkMi-6xo_S78c7E3nwwrK4qAGOuqOuGLVuWz77EJ8ASrfrR7-vSsoTc4GFACgNvChteRM4fTIOKeJldnY\",\n\t\"providerUserId\": \"102540075803334303979\"\n\n}"
+			},
+			"created": 1545170066821,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8b5b8fa44b094423ba23f6f1247261eb",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1545170066821,
+			"method": "POST",
+			"modified": 1547483995731,
+			"name": "Logar usuario",
+			"parameters": [],
+			"parentId": "fld_f42c06c5127e49b692ebb34740b62635",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/auth/login",
 			"_type": "request"
 		},
 		{
@@ -1091,12 +1120,12 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1545072681591,
+			"metaSortKey": -1547137206044,
 			"method": "POST",
-			"modified": 1547471069433,
+			"modified": 1547484072512,
 			"name": "Criar Pessoa",
 			"parameters": [],
-			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
 			"settingMaxTimelineDataSize": 1000,
@@ -1105,60 +1134,6 @@
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/pessoa/criar",
 			"_type": "request"
-		},
-		{
-			"_id": "req_f76e06813a774fde82af8a8b6ac4e043",
-			"authentication": {},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"name\": \"Alexandre Veronezi\",\n\t\"provider\": \"google\",\n\t\"providerToken\": \"ya29.Gl15BqMAiIjs5VRrsvBETkx1V-AVfjf0ei33LyM1-IwrI3NkMi-6xo_S78c7E3nwwrK4qAGOuqOuGLVuWz77EJ8ASrfrR7-vSsoTc4GFACgNvChteRM4fTIOKeJldnY\",\n\t\"providerUserId\": \"102540075803334303979\"\n\n}"
-			},
-			"created": 1545170066821,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_8b5b8fa44b094423ba23f6f1247261eb",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1545170066821,
-			"method": "POST",
-			"modified": 1547471063137,
-			"name": "Logar usuario",
-			"parameters": [],
-			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/auth/login",
-			"_type": "request"
-		},
-		{
-			"_id": "fld_45d2b0462f214a23a45635ac2be03031",
-			"created": 1546965993841,
-			"description": "",
-			"environment": {},
-			"metaSortKey": -1547469912825,
-			"modified": 1547469925991,
-			"name": "Atualizar",
-			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
-			"_type": "request_group"
-		},
-		{
-			"_id": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
-			"created": 1547469931338,
-			"description": "",
-			"environment": {},
-			"metaSortKey": -1547469931338,
-			"modified": 1547469931338,
-			"name": "Obter",
-			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
-			"_type": "request_group"
 		},
 		{
 			"_id": "req_946a7d7c8f694f68a690fd110db9c596",
@@ -1394,9 +1369,15 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469960020,
 			"method": "GET",
-			"modified": 1547471051250,
+			"modified": 1547483925343,
 			"name": "Listar por email",
-			"parameters": [],
+			"parameters": [
+				{
+					"id": "pair_eac142bdf5554cf3bce009bb5554fc4a",
+					"name": "emailPrincipal",
+					"value": "Marlon.Schiller53@yahoo.com"
+				}
+			],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
@@ -1404,7 +1385,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas?email=xx",
+			"url": "https://localhost:3000/pessoas",
 			"_type": "request"
 		},
 		{
@@ -1417,7 +1398,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469966403,
 			"method": "GET",
-			"modified": 1547471050738,
+			"modified": 1547483849807,
 			"name": "Obter por id",
 			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
