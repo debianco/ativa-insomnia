@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-14T16:45:32.716Z",
+	"__export_date": "2019-01-17T22:54:29.105Z",
 	"__export_source": "insomnia.desktop.app:v6.3.1",
 	"resources": [
 		{
@@ -54,7 +54,7 @@
 					"base_url": "{{ gateway.protocol  }}//{{ gateway.host  }}:{{ gateway.port  }}",
 					"host": "localhost",
 					"port": 3000,
-					"protocol": "https"
+					"protocol": "https:"
 				},
 				"keycloak": {
 					"admin": {
@@ -84,7 +84,7 @@
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1547470930541,
+			"modified": 1547489661523,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -1103,7 +1103,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"accessDataId\": \"7a9d714c-f458-4f77-a55f-dc6d611fff7b\",\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"name\": \"Alexandre Veronezi\",\n\t\"document\": \"48077185096\",\n\t\"documentType\": 0\n}"
+				"text": "{\n\t\"dadosAcessoId\": \"fd6a2cf3-1d8f-4a85-979f-195dd9cf4200\",\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"nome\": \"Alexandre Veronezi\",\n\t\"documento\": \"48077185096\",\n\t\"tipoDocumento\": 0\n}"
 			},
 			"created": 1545072681591,
 			"description": "",
@@ -1122,7 +1122,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547137206044,
 			"method": "POST",
-			"modified": 1547484072512,
+			"modified": 1547656454854,
 			"name": "Criar Pessoa",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1132,7 +1132,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoa/criar",
+			"url": "{{ gateway.base_url  }}/pessoas/",
 			"_type": "request"
 		},
 		{
@@ -1140,7 +1140,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"_id\": \"ijgtVjnf70CVwEFKne5AQQ==\",\n\t\"dataInsercao\": \"2019-01-10T16:47:55.433Z\",\n\t\"SocialName\": \"Laurie\",\n\t\"Gender\": 1,\n\t\"MaritalStatus\": 0,\n\t\"SpouseName\": \"Shana Batz\",\n\t\"MotherName\": \"Chelsea Marquardt\",\n\t\"FatherName\": \"Steven Wisozk\",\n\t\"ProfessionCode\": null,\n\t\"Nationality\": \"brasileira\",\n\t\"Naturalness\": \"brasil - SP\",\n\t\"State\": null,\n\t\"ComplementaryData\": null,\n\t\"Addresses\": [\n\t\t{\n\t\t\t\"dataInsercao\": \"2019-01-10T18:42:04.141Z\",\n\t\t\t\"cep\": \"01325000\",\n\t\t\t\"logradouro\": \"Avenida Zika da Leste\",\n\t\t\t\"numero\": \"460\",\n\t\t\t\"complemento\": \"5º andar\",\n\t\t\t\"bairro\": \"bela vista\",\n\t\t\t\"cidade\": \"Sao Paulo\",\n\t\t\t\"uf\": \"SP\",\n\t\t\t\"pais\": \"Brasil\"\n\t\t}\n\t],\n\t\"Advisor\": {\n\t\t\"dataInsercao\": \"2019-01-10T16:47:55.572Z\",\n\t\t\"codigo\": \"96\"\n\t},\n\t\"Agent\": {\n\t\t\"dataInsercao\": \"2019-01-10T16:47:55.575Z\",\n\t\t\"nome\": \"Connie Crona\",\n\t\t\"documento\": \"34130354734\",\n\t\t\"tipoDocumento\": 1,\n\t\t\"email\": \"rogerio_roberto79@gmail\"\n\t},\n\t\"ResponsiblePerson\": null,\n\t\"AlternativeEmail\": \"bolso_naro@gmail\",\n\t\"BirthFoundationDate\": \"0001-01-01T00:00:00.000Z\",\n\t\"Bonds\": [],\n\t\"Document\": \"21587379724\",\n\t\"DocumentIssueDate\": \"2017-03-01T21:06:48.221Z\",\n\t\"DocumentIssuer\": 0,\n\t\"DocumentType\": 0,\n\t\"MainEmail\": \"Laurie38@yahoo.com\",\n\t\"Name\": \"Laurie Fahey\",\n\t\"Phones\": [],\n\t\"Documents\": [\n\t\t{\n\t\t\t\"dataInsercao\": \"2019-01-10T18:42:04.141Z\",\n\t\t\t\"documento\": \"400459588866\",\n\t\t\t\"tipoDocumento\": 0,\n\t\t\t\"orgaoEmissor\": 0,\n\t\t\t\"dataExpedicao\": \"2014-09-03T15:13:16.040Z\"\n\t\t}\n\t]\n}"
+				"text": "{\n\t\"atualizar\": \"enderecos\",\n\t\"enderecos\": [\n\t\t{\n\t\t\t\"cep\": \"01325000\",\n\t\t\t\"logradouro\": \"Avenida Zika da Leste\",\n\t\t\t\"numero\": \"460\",\n\t\t\t\"complemento\": \"5º andar\",\n\t\t\t\"bairro\": \"bela vista\",\n\t\t\t\"cidade\": \"Sao Paulo\",\n\t\t\t\"estado\": \"SP\",\n\t\t\t\"pais\": \"Brasil\"\n\t\t}\n\t]\n}"
 			},
 			"created": 1546891134307,
 			"description": "",
@@ -1154,7 +1154,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546928564074,
 			"method": "PATCH",
-			"modified": 1547471055863,
+			"modified": 1547572968256,
 			"name": "Endereço",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1236,7 +1236,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"documentos\",\n\t\"documentos\": [\n\t\t{\n\t\t\t\"documento\": \"400459588866\",\n\t\t\t\"tipoDocumento\": 0,\n\t\t\t\"orgaoEmissor\": 0,\n\t\t\t\"dataExpedicao\": \"2014-09-03T12:13:16.0402932-03:00\"\n\t\t}\n\t]\n}"
+				"text": "{\n\t\"atualizar\": \"documentos\",\n\t\"documentos\": [\n\t\t{\n\t\t\t\"documento\": \"400459588866\",\n\t\t\t\"tipoDocumento\": 0,\n\t\t\t\"orgaoEmissor\": 0,\n\t\t\t\"estadoEmissor\": \"SP\",\n\t\t\t\"dataExpedicao\": \"2014-09-03T12:13:16.0402932-03:00\"\n\t\t}\n\t]\n}"
 			},
 			"created": 1546983485531,
 			"description": "",
@@ -1250,7 +1250,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546983485531,
 			"method": "PATCH",
-			"modified": 1547471054647,
+			"modified": 1547571999788,
 			"name": "Documentos",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1268,7 +1268,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"procurador\",\n\t\"procurador\": {\n\t\t\"nome\": \"Jorge Bolsonaro Dunha\",\n\t\t\"documento\": \"457392191\",\n\t\t\"tipoDocumento\": 1,\n\t\t\"email\": \"jorge@bolsonaro.com.br\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"procurador\",\n\t\"emancipado\": 1,\n\t\"procurador\": {\n\t\t\"nome\": \"Jorge Bolsonaro Dunha\",\n\t\t\"documento\": \"457392191\",\n\t\t\"tipoDocumento\": 1,\n\t\t\"email\": \"jorge@bolsonaro.com.br\"\n\t}\n}"
 			},
 			"created": 1547042338236,
 			"description": "",
@@ -1282,7 +1282,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547042338236,
 			"method": "PATCH",
-			"modified": 1547471053449,
+			"modified": 1547574058621,
 			"name": "Procurador",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1300,7 +1300,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"identificacao\",\n\t\"documento\": \"40045958866\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Joana da Penha\",\n\t\"nomeSocial\": \"Maria Joana\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2014-09-03T12:13:16.0402932-03:00\",\n\t\"nacionalidade\": \"Brasil\",\n\t\"naturalidade\": \"brasileiro\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Conjuge da Joana\",\n\t\"nomeMae\": \"Mae da Joana\",\n\t\"nomePai\": \"Pai da Joana\",\n\t\"uf\": \"SP\"\n}"
+				"text": "{\n\t\"atualizar\": \"identificacao\",\n\t\"documento\": \"40045958866\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Joana da Penha\",\n\t\"nomeSocial\": \"Maria Joana\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2014-09-03T12:13:16.0402932-03:00\",\n\t\"pais\": \"Brasil\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Conjuge da Joana\",\n\t\"nomeMae\": \"Mae da Joana\",\n\t\"nomePai\": \"Pai da Joana\",\n\t\"uf\": \"SP\"\n}"
 			},
 			"created": 1547064712824,
 			"description": "",
@@ -1314,7 +1314,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547064712824,
 			"method": "PATCH",
-			"modified": 1547471052901,
+			"modified": 1547489753202,
 			"name": "Identificacao",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1346,7 +1346,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547137205994,
 			"method": "PATCH",
-			"modified": 1547471260428,
+			"modified": 1547580207635,
 			"name": "Contatos",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1369,13 +1369,13 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469960020,
 			"method": "GET",
-			"modified": 1547483925343,
+			"modified": 1547657317793,
 			"name": "Listar por email",
 			"parameters": [
 				{
 					"id": "pair_eac142bdf5554cf3bce009bb5554fc4a",
 					"name": "emailPrincipal",
-					"value": "Marlon.Schiller53@yahoo.com"
+					"value": "alexandre.sveronezi@gmail.com"
 				}
 			],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
