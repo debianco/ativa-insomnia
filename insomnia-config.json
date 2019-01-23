@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-17T22:54:29.105Z",
+	"__export_date": "2019-01-23T19:59:00.711Z",
 	"__export_source": "insomnia.desktop.app:v6.3.1",
 	"resources": [
 		{
@@ -29,7 +29,7 @@
 			"_id": "jar_b71c8c3c1fef4352b0f1a1f7d3aac54a",
 			"cookies": [],
 			"created": 1539008053014,
-			"modified": 1547138379106,
+			"modified": 1548273336941,
 			"name": "Default Jar",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "cookie_jar"
@@ -64,7 +64,7 @@
 						"password": "senha",
 						"user": "admin"
 					},
-					"base_url": "{{ keycloak.protocol  }}//{{ keycloak.host  }}:{{ keycloak.port  }}/{{ keycloak.path  }}",
+					"base_url": "{{ keycloak.protocol  }}://{{ keycloak.host  }}:{{ keycloak.port  }}/{{ keycloak.path  }}",
 					"front": {
 						"client_id": "front-cadastro",
 						"client_secret": "82eaae1f-ca3e-4021-93ea-f0b550b150b2"
@@ -84,7 +84,7 @@
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1547489661523,
+			"modified": 1548161080443,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -158,17 +158,17 @@
 		{
 			"_id": "req_3317db474acb487797f275355253515b",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "{{ admin_authorization_token_url  }}",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"redirectUrl": "",
 				"scope": "",
 				"tokenPrefix": "",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {},
 			"created": 1539008832299,
@@ -183,7 +183,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832117.75,
 			"method": "GET",
-			"modified": 1544793850995,
+			"modified": 1548272803992,
 			"name": "Obter qtd de usuarios",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -193,20 +193,20 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/admin/realms/{{ users_realm  }}/users/count",
+			"url": "{{ keycloak.base_url  }}/admin/realms/{{ keycloak.users.realm  }}/users/count",
 			"_type": "request"
 		},
 		{
 			"_id": "req_4f2a9226d05b43ae86c4abad709499cc",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {},
 			"created": 1539116035863,
@@ -215,7 +215,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832192.75,
 			"method": "GET",
-			"modified": 1547471173979,
+			"modified": 1548273211129,
 			"name": "Obter usuario",
 			"parameters": [
 				{
@@ -231,24 +231,24 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ keycloak.base_url }}/admin/realms/{{ keycloak.users.realm }}/users/{{ user_id_test  }}",
+			"url": "{{ keycloak.base_url }}/admin/realms/{{ keycloak.users.realm }}/users/{{ keycloak.users.id_test  }}",
 			"_type": "request"
 		},
 		{
 			"_id": "req_ed79ad57a6964c0480b5d50f255af341",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{ \n    \"temporary\": false,\n    \"type\": \"password\",\n    \"value\": {{ user_password_test  }}\n}"
+				"text": "{ \n    \"temporary\": false,\n    \"type\": \"password\",\n    \"value\": {{ keycloak.users.password_test  }}\n}"
 			},
 			"created": 1539116210989,
 			"description": "Erro Expressao Regular:\n{\n\t\"error\": \"invalidPasswordRegexPatternMessage\",\n\t\"error_description\": \"Invalid password: fails to match regex pattern(s).\"\n}",
@@ -262,7 +262,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832167.75,
 			"method": "PUT",
-			"modified": 1547471202359,
+			"modified": 1548273161277,
 			"name": "Alterar senha usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -272,24 +272,24 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ keycloak.base_url }}/admin/realms/{{ keycloak.users.realm }}/users/{{ user_id_test  }}/reset-password",
+			"url": "{{ keycloak.base_url }}/admin/realms/{{ keycloak.users.realm }}/users/{{ keycloak.users.id_test  }}/reset-password",
 			"_type": "request"
 		},
 		{
 			"_id": "req_93bb192183e648c2a7e2f50dd86c533f",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"credentialsInBody": false,
 				"disabled": false,
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"scope": "",
 				"tokenPrefix": "",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {
 				"mimeType": "application/json",
@@ -307,7 +307,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832217.75,
 			"method": "POST",
-			"modified": 1547471140504,
+			"modified": 1548273264185,
 			"name": "Criar novo usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -323,14 +323,14 @@
 		{
 			"_id": "req_d3b0669f489b46d3b3699fb26d5ff4b6",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {},
 			"created": 1542733073104,
@@ -339,13 +339,13 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832180.25,
 			"method": "GET",
-			"modified": 1547471187400,
+			"modified": 1548272944598,
 			"name": "Listar usuarios",
 			"parameters": [
 				{
 					"id": "pair_ad1755a617e041b38b0b5864bc64d315",
 					"name": "email",
-					"value": "{{ user_email_test  }}"
+					"value": "{{ keycloak.users.email_test  }}"
 				}
 			],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -361,18 +361,18 @@
 		{
 			"_id": "req_96f234e1fa344112940eec9df1025c54",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }} {{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"credentialsInBody": false,
 				"disabled": false,
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"scope": "",
 				"tokenPrefix": "",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {
 				"mimeType": "application/json",
@@ -390,7 +390,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832205.25,
 			"method": "POST",
-			"modified": 1547471159792,
+			"modified": 1548273242387,
 			"name": "Criar novo usuario (admin-cli)",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -406,13 +406,13 @@
 		{
 			"_id": "req_a38c335ae0ad4f2bbdff62753c7a5bf9",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "{{ keycloak.admin.client_secret  }}",
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {
 				"mimeType": "application/json",
@@ -430,7 +430,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832267.75,
 			"method": "POST",
-			"modified": 1547471118237,
+			"modified": 1548273301833,
 			"name": "Adicionar Provider ao Usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -580,29 +580,35 @@
 		{
 			"_id": "req_867ead4802cf4c0b83576a11adfe3e11",
 			"authentication": {
-				"accessTokenUrl": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+				"accessTokenUrl": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 				"authorizationUrl": "",
-				"clientId": "{{ admin_client_id  }}",
-				"clientSecret": "{{ admin_client_secret  }}",
+				"clientId": "{{ keycloak.admin.client_id  }}",
+				"clientSecret": "5d6d2a49-dc11-482d-b173-5106b5198fb5",
 				"grantType": "password",
-				"password": "{{ admin_password  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"type": "oauth2",
-				"username": "{{ admin_user  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {},
 			"created": 1542913151804,
 			"description": "",
-			"headers": [],
+			"headers": [
+				{
+					"id": "pair_78cb65e368d84b60bc0985f45f06fe2e",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3YjMxYTIzZi1iMjg1LTQxZTctYjNlMC1hMjY3YWRhZjcxNzAifQ.eyJqdGkiOiI1MTE4N2ZkMy00NzVjLTQ1OTUtOWVmMC03NzkyMGRlMzYxNjQiLCJleHAiOjAsIm5iZiI6MCwiaWF0IjoxNTQ3ODQ3OTc3LCJpc3MiOiJodHRwOi8va2V5Y2xvYWsuaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5ici9hdXRoL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJodHRwOi8va2V5Y2xvYWsuaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5ici9hdXRoL3JlYWxtcy9tYXN0ZXIiLCJ0eXAiOiJSZWdpc3RyYXRpb25BY2Nlc3NUb2tlbiIsInJlZ2lzdHJhdGlvbl9hdXRoIjoiYXV0aGVudGljYXRlZCJ9.-hWWMfvYqW5fG5sDgkkpNu3CnpiXVRlzxMeCAMjrSic"
+				}
+			],
 			"isPrivate": false,
 			"metaSortKey": -1542913151804,
 			"method": "GET",
-			"modified": 1544794228406,
+			"modified": 1548272671037,
 			"name": "GetUserId",
 			"parameters": [
 				{
 					"id": "pair_c761e3ac164e4c779e3590d3291c04ae",
 					"name": "username",
-					"value": "{{ user_name_test  }}"
+					"value": "{{ keycloak.users.name_test  }}"
 				}
 			],
 			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
@@ -612,7 +618,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "https://resource-dev.ativacorretora.com.br:8081/auth/admin/realms/ativa-demo/users",
+			"url": "{{ keycloak.base_url  }}/admin/realms/ativa-demo/users",
 			"_type": "request"
 		},
 		{
@@ -670,12 +676,12 @@
 					{
 						"id": "pair_61e716939a874c058c64712f794a334d",
 						"name": "client_id",
-						"value": "{{ front_client_id  }}"
+						"value": "{{ keycloak.front.client_id  }}"
 					},
 					{
 						"id": "pair_404a9394dfc44a22886afb6cd8479e68",
 						"name": "client_secret",
-						"value": "{{ front_client_secret  }}"
+						"value": "{{ keycloak.front.client_secret  }}"
 					},
 					{
 						"id": "pair_0a43530180c6461598c3fd92ca4de8e3",
@@ -711,7 +717,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113184973,
 			"method": "POST",
-			"modified": 1544794209656,
+			"modified": 1548272464069,
 			"name": "Token Exchange",
 			"parameters": [],
 			"parentId": "fld_2330046cf58c4f2c87fe2a7e3f4d4356",
@@ -721,7 +727,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:8080/auth/realms/{{ users_realm  }}/protocol/openid-connect/token",
+			"url": "{{ keycloak.base_url  }}/realms/ke/protocol/openid-connect/token",
 			"_type": "request"
 		},
 		{
@@ -738,22 +744,22 @@
 					{
 						"id": "pair_3a569242d7934232b1e890c1f29439cd",
 						"name": "client_id",
-						"value": "{{ front_client_id  }}"
+						"value": "{{ keycloak.front.client_id  }}"
 					},
 					{
 						"id": "pair_90e6e845a88348b7a0bfcdcbbd1bea1e",
 						"name": "client_secret",
-						"value": "{{ front_client_secret  }}"
+						"value": "{{ keycloak.front.client_secret  }}"
 					},
 					{
 						"id": "pair_7d8472499d684fc99ad03dc4bf8d0134",
 						"name": "username",
-						"value": "{{ user_name_test  }}"
+						"value": "{{ keycloak.users.name_test  }}"
 					},
 					{
 						"id": "pair_f20aab18ac4e457c8782ae534bea6bf0",
 						"name": "password",
-						"value": "{{ user_password_test  }}"
+						"value": "{{ keycloak.users.password_test  }}"
 					}
 				]
 			},
@@ -769,7 +775,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539113184998,
 			"method": "POST",
-			"modified": 1544794469297,
+			"modified": 1548162073205,
 			"name": "Obter token (usuario e senha)",
 			"parameters": [],
 			"parentId": "fld_a8603fdedc474b109ff8ec0d63bd14d0",
@@ -779,16 +785,16 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
+			"url": "{{ keycloak.base_url  }}/realms/{{ keycloak.users.realm  }}/protocol/openid-connect/token",
 			"_type": "request"
 		},
 		{
 			"_id": "req_3178e1888bd740b08a4da352aff2b062",
 			"authentication": {
 				"disabled": false,
-				"password": "{{ front_client_secret  }}",
+				"password": "{{ keycloak.front.client_secret  }}",
 				"type": "basic",
-				"username": "{{ front_client_id  }}"
+				"username": "{{ keycloak.front.client_id  }}"
 			},
 			"body": {
 				"mimeType": "application/x-www-form-urlencoded",
@@ -801,7 +807,7 @@
 					{
 						"id": "pair_d3a34f9c2e2b41a0a18180f7fc2e5f09",
 						"name": "client_id",
-						"value": "{{ front_client_id  }}"
+						"value": "{{ keycloak.front.client_id  }}"
 					},
 					{
 						"id": "pair_dc4f42d96b9f4f3e8dd3788ae88e7160",
@@ -822,7 +828,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539017243980,
 			"method": "POST",
-			"modified": 1544794474069,
+			"modified": 1548161710371,
 			"name": "Obter token (service account)",
 			"parameters": [],
 			"parentId": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
@@ -832,7 +838,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
+			"url": "{{ keycloak.base_url  }}/realms/{{ keycloak.users.realm  }}/protocol/openid-connect/token",
 			"_type": "request"
 		},
 		{
@@ -849,22 +855,22 @@
 					{
 						"id": "pair_a2803881d04446058d2313313e39f5db",
 						"name": "username",
-						"value": "{{ admin_user  }}"
+						"value": "{{ keycloak.admin.user  }}"
 					},
 					{
 						"id": "pair_3e24cfff7c7c4273b9c75e06e4c9a0a8",
 						"name": "password",
-						"value": "{{ admin_password  }}"
+						"value": "{{ keycloak.admin.password  }}"
 					},
 					{
 						"id": "pair_3b0be4c0c1854ab3b8670916c6161df4",
 						"name": "client_id",
-						"value": "{{ admin_client_id  }}"
+						"value": "{{ keycloak.admin.client_id  }}"
 					},
 					{
 						"id": "pair_d65134ee176b45c5b72997f323335236",
 						"name": "client_secret",
-						"value": "{{ admin_client_secret  }}"
+						"value": "{{ keycloak.admin.client_secret  }}"
 					}
 				]
 			},
@@ -880,7 +886,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539017244030,
 			"method": "POST",
-			"modified": 1544794473368,
+			"modified": 1548161063588,
 			"name": "Obter token (admin)",
 			"parameters": [],
 			"parentId": "fld_a1e4d1aa9eeb4011855fb8b01fe9950e",
@@ -890,7 +896,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}{{ admin_authorization_token_url  }}",
+			"url": "{{ keycloak.base_url  }}{{ keycloak.admin.authorization_token_url  }}",
 			"_type": "request"
 		},
 		{
@@ -907,12 +913,12 @@
 					{
 						"id": "pair_3a569242d7934232b1e890c1f29439cd",
 						"name": "client_id",
-						"value": "{{ front_client_id  }}"
+						"value": "{{ keycloak.front.client_id  }}"
 					},
 					{
 						"id": "pair_90e6e845a88348b7a0bfcdcbbd1bea1e",
 						"name": "client_secret",
-						"value": "{{ front_client_secret  }}"
+						"value": "{{ keycloak.front.client_secret  }}"
 					},
 					{
 						"id": "pair_7d8472499d684fc99ad03dc4bf8d0134",
@@ -933,7 +939,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539089199743.5,
 			"method": "POST",
-			"modified": 1544793866656,
+			"modified": 1548272503758,
 			"name": "Obter token (refresh token)",
 			"parameters": [],
 			"parentId": "fld_0972855d6a044c5aab0fa16f8f1af4f2",
@@ -943,16 +949,16 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token",
+			"url": "{{ keycloak.base_url  }}/realms/{{ keycloak.users.realm  }}/protocol/openid-connect/token",
 			"_type": "request"
 		},
 		{
 			"_id": "req_6b8548e2ab1045b6980f25cdb724d749",
 			"authentication": {
 				"disabled": false,
-				"password": "{{ front_client_secret  }}",
+				"password": "{{ keycloak.admin.password  }}",
 				"type": "basic",
-				"username": "{{ front_client_id  }}"
+				"username": "{{ keycloak.admin.user  }}"
 			},
 			"body": {
 				"mimeType": "application/x-www-form-urlencoded",
@@ -986,7 +992,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539089199793.5,
 			"method": "POST",
-			"modified": 1547471205487,
+			"modified": 1548273137987,
 			"name": "Validate Token",
 			"parameters": [],
 			"parentId": "fld_0972855d6a044c5aab0fa16f8f1af4f2",
@@ -996,7 +1002,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ auth_base_url  }}/realms/{{ users_realm  }}/protocol/openid-connect/token/introspect",
+			"url": "{{ keycloak.base_url  }}/realms/{{ keycloak.users.realm  }}/protocol/openid-connect/token/introspect",
 			"_type": "request"
 		},
 		{
