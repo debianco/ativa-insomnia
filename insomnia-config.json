@@ -1,8 +1,8 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-23T19:59:00.711Z",
-	"__export_source": "insomnia.desktop.app:v6.3.1",
+	"__export_date": "2019-01-24T23:31:07.578Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
 			"_id": "wrk_ddc05b32652a43a2b14929e20555da74",
@@ -46,6 +46,42 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "req_2d458fc44f3f4eb799606fc94da8fe32",
+			"authentication": {
+				"prefix": "",
+				"token": "eyJhbGciOiJFUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXVGRqQ01mdlQ0emhPX1U0UlI4aUhwY2RFWU5ON0lOUFhmTndVVkVLUEVjIn0.eyJqdGkiOiI5NWQ4MTZhMy1iZmU2LTQ1MjQtOWUxZC0yMzUwODliZTIyZTUiLCJleHAiOjE1NDMyNzEzNjYsIm5iZiI6MCwiaWF0IjoxNTQzMjcwNDY2LCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwiYXVkIjoiZnJvbnQtY2FkYXN0cm8iLCJzdWIiOiJkYjE2ZWU3Mi0xYjQ5LTQ0MzEtYjVhYy1lNmM4MjgzYzZjMzgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmcm9udC1jYWRhc3RybyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjlhNDM3ZTc4LWNjYWQtNDFiYy1hNTAwLWM1MzU5OTNmNTJmNyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9hcGktcG9ydGFsLWludmVzdGlkb3ItaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5icjo4MDgwLyoiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkphaXIgQm9sc29uYXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiamFpckBnbWFpbC5jb20iLCJnaXZlbl9uYW1lIjoiSmFpciIsImZhbWlseV9uYW1lIjoiQm9sc29uYXJvIiwiZW1haWwiOiJib2xzb25hcm9AZ21haWwuY29tIn0.MEQCICucjV0JwpyxRYabUZPKD-IfgSEEaJx1nglI--4EnafwAiAkwTrhrq2IYDrx99hBMsfPU58nwevB9TdCVXW7qYsqTg",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"documento\": \"96152775418\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Fredrick Zulauf\",\n\t\"nomeSocial\": \"Fredrick\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2011-09-13T12:13:16.0402932-03:00\",\n\t\"nacionalidade\": \"brasileira\",\n\t\"naturalidade\": \"brasil - SP\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Everardo Keebler\",\n\t\"nomeMae\": \"Jenna Stracke\",\n\t\"nomePai\": \"Sergio Frami\"\n}"
+			},
+			"created": 1543242507784,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5944206c18ee48659c877582b857d4a3",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543242507784,
+			"method": "POST",
+			"modified": 1547052828457,
+			"name": "teste",
+			"parameters": [],
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://localhost:3000/pessoa/atualizar-identificacao",
+			"_type": "request"
+		},
+		{
 			"_id": "env_766e64e30ee54ce5b340f61104fb3793",
 			"color": "#55df7e",
 			"created": 1539010328223,
@@ -84,8 +120,52 @@
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1548161080443,
+			"modified": 1548273750592,
 			"name": "Dev",
+			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_118adc48f39a40c5bc29148137212b86",
+			"color": "#fdc80f",
+			"created": 1547761167260,
+			"data": {
+				"gateway": {
+					"base_url": "{{ gateway.protocol  }}://{{ gateway.host  }}:{{ gateway.port  }}",
+					"host": "api.hmg.investidor.ativacorretora.com.br",
+					"port": 443,
+					"protocol": "https"
+				},
+				"keycloak": {
+					"admin": {
+						"authorization_token_url": "/realms/master/protocol/openid-connect/token",
+						"client_id": "admin-cli",
+						"client_secret": "e458039b-5d46-4249-8b71-cd82200aaf5c",
+						"password": "senha",
+						"user": "admin"
+					},
+					"base_url": "{{ keycloak.protocol  }}://{{ keycloak.host  }}:{{ keycloak.port  }}/{{ keycloak.path  }}",
+					"front": {
+						"client_id": "front-cadastro",
+						"client_secret": "82eaae1f-ca3e-4021-93ea-f0b550b150b2"
+					},
+					"host": "keycloak.hmg.ativacorretora.com.br",
+					"path": "auth",
+					"port": 80,
+					"protocol": "https",
+					"users": {
+						"email_test": "bolsonaro.mito@gmail.com",
+						"id_test": "bd1a3559-d3f6-4db1-b6d2-74fcb2c13ea3",
+						"name_test": "bolsonaro.mito@gmail.com",
+						"password_test": "135791",
+						"realm": "ativa-demo"
+					}
+				}
+			},
+			"isPrivate": false,
+			"metaSortKey": 1547761167260,
+			"modified": 1548372562585,
+			"name": "Hmg",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
 		},
@@ -1375,15 +1455,9 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469960020,
 			"method": "GET",
-			"modified": 1547657317793,
+			"modified": 1548372645713,
 			"name": "Listar por email",
-			"parameters": [
-				{
-					"id": "pair_eac142bdf5554cf3bce009bb5554fc4a",
-					"name": "emailPrincipal",
-					"value": "alexandre.sveronezi@gmail.com"
-				}
-			],
+			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
@@ -1391,7 +1465,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoas",
+			"url": "{{ gateway.base_url }}/pessoas?emailPrincipal=eu@henriquedesimone.com.br",
 			"_type": "request"
 		},
 		{
