@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-02-11T17:25:39.354Z",
+	"__export_date": "2019-02-06T16:01:00.512Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -90,6 +90,38 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "https://localhost:3000/pessoa/atualizar-identificacao",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3eb0f79d45604a61b6445c76e3fce6a3",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJkM2FkOTBhZi0wZDJhLTQ4NTQtYjYzNy01MmUyNTc0ZmZiMTUifQ.eyJqdGkiOiIyOGM0MDU4OS1kNzdmLTQ2ZGQtYWY3Yi05ZDYwYTNkY2E0YmIiLCJleHAiOjE1NDgzNTUyMzAsIm5iZiI6MCwiaWF0IjoxNTQ4MzU0MzMwLCJpc3MiOiJodHRwczovL2tleWNsb2FrLmhtZy5hdGl2YWNvcnJldG9yYS5jb20uYnIvYXV0aC9yZWFsbXMvYXRpdmEtZGVtbyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyNzBkMmY4Zi04Y2M0LTRjZWQtYTExZi00YThiOTJkZDlmNTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmcm9udC1jYWRhc3RybyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImRjYzdjYjIyLThjNGQtNGU3NC05NzQxLWMxM2U4OTA3MTk0ZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9hcGktcG9ydGFsLWludmVzdGlkb3ItaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5icjo4MDgwLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZW5yaXF1ZSBTb3V6YSIsInByZWZlcnJlZF91c2VybmFtZSI6ImV1QGhlbnJpcXVlZGVzaW1vbmUuY29tLmJyIiwiZ2l2ZW5fbmFtZSI6IkhlbnJpcXVlIiwiZmFtaWx5X25hbWUiOiJTb3V6YSIsImVtYWlsIjoiZXVAaGVucmlxdWVkZXNpbW9uZS5jb20uYnIifQ.-SR5heDZGb6RiA676CY75ckN9dtMizRHXIizmoCxNfc",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1548372073078,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548372073078,
+			"method": "GET",
+			"modified": 1548372375991,
+			"name": "My Request",
+			"parameters": [
+				{
+					"id": "pair_98a61e50926a4cf6a55bec13e7206127",
+					"name": "emailPrincipal",
+					"value": "eu@henriquedesimone.com.br"
+				}
+			],
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "https://api.hmg.investidor.ativacorretora.com.br/pessoas",
 			"_type": "request"
 		},
 		{
@@ -1375,7 +1407,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"assessor\",\n\t\"assessor\": {\n\t\t\"codigo\": \"45343\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"assessor\",\n\t\"assessor\": {\n\t\t\"habilitado\": true,\n\t\t\"codigo\": \"45343\"\n\t}\n}"
 			},
 			"created": 1546976815978,
 			"description": "",
@@ -1389,7 +1421,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546976815978,
 			"method": "PATCH",
-			"modified": 1547471055298,
+			"modified": 1549464263287,
 			"name": "Assessor",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1399,7 +1431,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
 			"_type": "request"
 		},
 		{
@@ -1528,6 +1560,230 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3df83f89dda746b5a672844998fed472",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"domiciliosFiscais\",\n\t\"domiciliosFiscais\": {\n\t\t\"habilitado\": true,\n\t\t\"pais\": \"Brasil\",\n\t\t\"codigoContribuinte\": \"171\"\n\t}\n}"
+			},
+			"created": 1549404340790,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546971428331,
+			"method": "PATCH",
+			"modified": 1549407583657,
+			"name": "Domicilios Fiscais",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_94d08d06faa44d15bb89cae51ce36e17",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"residenciaPermanente\",\n\t\"residenciaPermanente\": {\n\t\t\"habilitado\": true,\n\t\t\"pais\": \"Brasil\",\n\t\t\"codigoContribuinte\": \"171\"\n\t}\n}"
+			},
+			"created": 1549463843154,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546968734507.5,
+			"method": "PATCH",
+			"modified": 1549463937240,
+			"name": "Residencia Permanente",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_038ec3a91f774805b5b5a07a10466b6f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"cidadaoOuNatural\",\n\t\"cidadaoOuNatural\": {\n\t\t\"habilitado\": true,\n\t\t\"pais\": \"Brasil\",\n\t\t\"codigoContribuinte\": \"171\"\n\t}\n}"
+			},
+			"created": 1549464003220,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546967387595.75,
+			"method": "PATCH",
+			"modified": 1549464061599,
+			"name": "Cidadao Ou Natural",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_42dcbf0691514b60805bfbb7b2cfb9d4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"operaContaTerceiro\",\n\t\"operaContaTerceiro\": {\n\t\t\"habilitado\": true,\n\t\t\"nome\": \"Alexandre Veronezi\",\n\t\t\"documento\": \"30314415831\",\n\t\t\"tipoDocumento\": 0\n\t}\n}"
+			},
+			"created": 1549464322081,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546974122154.5,
+			"method": "PATCH",
+			"modified": 1549464427132,
+			"name": "Opera Conta Terceiro",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_15b5eb90e4c84af29622afd672a03433",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"ordemServicoProcurador\",\n\t\"ordemServicoProcurador\": {\n\t\t\"habilitado\": true,\n\t\t\"nome\": \"Alexandre Veronezi\",\n\t\t\"documento\": \"30314415831\",\n\t\t\"tipoDocumento\": 0\n\t}\n}"
+			},
+			"created": 1549464447482,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546972775242.75,
+			"method": "PATCH",
+			"modified": 1549464465557,
+			"name": "Ordem Servico Procurador",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1a37b1892e83480383dae7c1bdb82d37",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"politicamenteExposta\",\n\t\"politicamenteExposta\": {\n\t\t\"habilitado\": true\n\t}\n}"
+			},
+			"created": 1549464490953,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546972101786.875,
+			"method": "PATCH",
+			"modified": 1549464519195,
+			"name": "Politicamente Exposta",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ef7baf00c4564a569ca71ddde7c77a34",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"tipoInvestidor\",\n\t\"tipoInvestidor\": {\n\t\t\"habilitado\": true,\n\t\t\"tipoInvestidor\": 0\n\t}\n}"
+			},
+			"created": 1549464541745,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0d7a40fa71be4f29b1067c36a85209d7",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546971765058.9375,
+			"method": "PATCH",
+			"modified": 1549464577609,
+			"name": "Tipo Investidor",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
 			"_type": "request"
 		},
 		{
