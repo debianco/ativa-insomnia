@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-24T23:31:07.578Z",
+	"__export_date": "2019-02-11T17:25:39.354Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -39,9 +39,20 @@
 			"created": 1539017215525,
 			"description": "",
 			"environment": {},
-			"metaSortKey": -1539115389892,
-			"modified": 1539115394287,
+			"metaSortKey": -1543242507809,
+			"modified": 1549391960500,
 			"name": "Auth",
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"created": 1543268621590,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1543242507834,
+			"modified": 1549391958770,
+			"name": "Gateway",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "request_group"
 		},
@@ -225,14 +236,36 @@
 			"_type": "request_group"
 		},
 		{
-			"_id": "fld_017fa81570d54cdcba26d2a519f63e4a",
-			"created": 1543268621590,
+			"_id": "fld_09d8f12ae65b4f54933a0c31b03facc2",
+			"created": 1547469912775,
 			"description": "",
 			"environment": {},
-			"metaSortKey": -1543268621590,
-			"modified": 1543268621590,
-			"name": "Gateway",
-			"parentId": "fld_ff9cd61f452a462c93661ebcfe8fcbcc",
+			"metaSortKey": -1547469912775,
+			"modified": 1547469912775,
+			"name": "Pessoas",
+			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_f42c06c5127e49b692ebb34740b62635",
+			"created": 1547483991024,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547469912825,
+			"modified": 1547484025808,
+			"name": "Acesso",
+			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_93aae746026246ee87410332555ad770",
+			"created": 1549898440385,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1549898440385,
+			"modified": 1549898440385,
+			"name": "Arquivos",
+			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
 			"_type": "request_group"
 		},
 		{
@@ -1086,28 +1119,6 @@
 			"_type": "request"
 		},
 		{
-			"_id": "fld_09d8f12ae65b4f54933a0c31b03facc2",
-			"created": 1547469912775,
-			"description": "",
-			"environment": {},
-			"metaSortKey": -1547469912775,
-			"modified": 1547469912775,
-			"name": "Pessoas",
-			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
-			"_type": "request_group"
-		},
-		{
-			"_id": "fld_f42c06c5127e49b692ebb34740b62635",
-			"created": 1547483991024,
-			"description": "",
-			"environment": {},
-			"metaSortKey": -1547469912825,
-			"modified": 1547484025808,
-			"name": "Acesso",
-			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
-			"_type": "request_group"
-		},
-		{
 			"_id": "fld_45d2b0462f214a23a45635ac2be03031",
 			"created": 1546965993841,
 			"description": "",
@@ -1126,6 +1137,17 @@
 			"metaSortKey": -1547469931338,
 			"modified": 1547469931338,
 			"name": "Obter",
+			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_a16af26d8aab4c2a9865d41fc917d7d0",
+			"created": 1549391976921,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547469931388,
+			"modified": 1549391982061,
+			"name": "Status Cadastro",
 			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
 			"_type": "request_group"
 		},
@@ -1182,6 +1204,69 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/auth/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1c0d50ecfd994a34beea3c40a339ab56",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"fileName": "C:\\Users\\leoss\\Desktop\\teste\\main-qimg-70e08cee99e218a590c08c518086762f-c.jpg",
+						"id": "pair_9fd1f1eae7584d038ec1985f5916a0e1",
+						"name": "file",
+						"type": "file",
+						"value": ""
+					}
+				]
+			},
+			"created": 1549663005283,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_31a9e74aa6664793bfff44a741821397",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549663005283,
+			"method": "POST",
+			"modified": 1549902335561,
+			"name": "Upload de template",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/arquivos/templates/01/teste",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f5b3926b526b4784a0e609cd407b5e55",
+			"authentication": {},
+			"body": {},
+			"created": 1549902300322,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549527502278,
+			"method": "GET",
+			"modified": 1549905657361,
+			"name": "Download de template",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
 			"_type": "request"
 		},
 		{
@@ -1455,7 +1540,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469960020,
 			"method": "GET",
-			"modified": 1548372645713,
+			"modified": 1548885607951,
 			"name": "Listar por email",
 			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
@@ -1465,7 +1550,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url }}/pessoas?emailPrincipal=eu@henriquedesimone.com.br",
+			"url": "{{ gateway.base_url }}",
 			"_type": "request"
 		},
 		{
@@ -1489,6 +1574,29 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/pessoas/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_579458be222a470fa54525da5e788190",
+			"authentication": {},
+			"body": {},
+			"created": 1549391999273,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549391999273,
+			"method": "GET",
+			"modified": 1549392048459,
+			"name": "Obter por pessoa",
+			"parameters": [],
+			"parentId": "fld_a16af26d8aab4c2a9865d41fc917d7d0",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{% uuid 'v4' %}/status-cadastro",
 			"_type": "request"
 		}
 	]
