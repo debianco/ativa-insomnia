@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-02-06T16:01:00.512Z",
+	"__export_date": "2019-02-15T17:29:20.479Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -55,74 +55,6 @@
 			"name": "Gateway",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "request_group"
-		},
-		{
-			"_id": "req_2d458fc44f3f4eb799606fc94da8fe32",
-			"authentication": {
-				"prefix": "",
-				"token": "eyJhbGciOiJFUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXVGRqQ01mdlQ0emhPX1U0UlI4aUhwY2RFWU5ON0lOUFhmTndVVkVLUEVjIn0.eyJqdGkiOiI5NWQ4MTZhMy1iZmU2LTQ1MjQtOWUxZC0yMzUwODliZTIyZTUiLCJleHAiOjE1NDMyNzEzNjYsIm5iZiI6MCwiaWF0IjoxNTQzMjcwNDY2LCJpc3MiOiJodHRwczovL3Jlc291cmNlLWRldi5hdGl2YWNvcnJldG9yYS5jb20uYnI6ODA4MS9hdXRoL3JlYWxtcy9hdGl2YS1kZW1vIiwiYXVkIjoiZnJvbnQtY2FkYXN0cm8iLCJzdWIiOiJkYjE2ZWU3Mi0xYjQ5LTQ0MzEtYjVhYy1lNmM4MjgzYzZjMzgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmcm9udC1jYWRhc3RybyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjlhNDM3ZTc4LWNjYWQtNDFiYy1hNTAwLWM1MzU5OTNmNTJmNyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9hcGktcG9ydGFsLWludmVzdGlkb3ItaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5icjo4MDgwLyoiXSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkphaXIgQm9sc29uYXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiamFpckBnbWFpbC5jb20iLCJnaXZlbl9uYW1lIjoiSmFpciIsImZhbWlseV9uYW1lIjoiQm9sc29uYXJvIiwiZW1haWwiOiJib2xzb25hcm9AZ21haWwuY29tIn0.MEQCICucjV0JwpyxRYabUZPKD-IfgSEEaJx1nglI--4EnafwAiAkwTrhrq2IYDrx99hBMsfPU58nwevB9TdCVXW7qYsqTg",
-				"type": "bearer"
-			},
-			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\t\"pessoaId\": \"562d388a-df39-40ef-95c0-414a9dee4041\",\n\t\"documento\": \"96152775418\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Fredrick Zulauf\",\n\t\"nomeSocial\": \"Fredrick\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2011-09-13T12:13:16.0402932-03:00\",\n\t\"nacionalidade\": \"brasileira\",\n\t\"naturalidade\": \"brasil - SP\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Everardo Keebler\",\n\t\"nomeMae\": \"Jenna Stracke\",\n\t\"nomePai\": \"Sergio Frami\"\n}"
-			},
-			"created": 1543242507784,
-			"description": "",
-			"headers": [
-				{
-					"id": "pair_5944206c18ee48659c877582b857d4a3",
-					"name": "Content-Type",
-					"value": "application/json"
-				}
-			],
-			"isPrivate": false,
-			"metaSortKey": -1543242507784,
-			"method": "POST",
-			"modified": 1547052828457,
-			"name": "teste",
-			"parameters": [],
-			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "https://localhost:3000/pessoa/atualizar-identificacao",
-			"_type": "request"
-		},
-		{
-			"_id": "req_3eb0f79d45604a61b6445c76e3fce6a3",
-			"authentication": {
-				"token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJkM2FkOTBhZi0wZDJhLTQ4NTQtYjYzNy01MmUyNTc0ZmZiMTUifQ.eyJqdGkiOiIyOGM0MDU4OS1kNzdmLTQ2ZGQtYWY3Yi05ZDYwYTNkY2E0YmIiLCJleHAiOjE1NDgzNTUyMzAsIm5iZiI6MCwiaWF0IjoxNTQ4MzU0MzMwLCJpc3MiOiJodHRwczovL2tleWNsb2FrLmhtZy5hdGl2YWNvcnJldG9yYS5jb20uYnIvYXV0aC9yZWFsbXMvYXRpdmEtZGVtbyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyNzBkMmY4Zi04Y2M0LTRjZWQtYTExZi00YThiOTJkZDlmNTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJmcm9udC1jYWRhc3RybyIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImRjYzdjYjIyLThjNGQtNGU3NC05NzQxLWMxM2U4OTA3MTk0ZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9hcGktcG9ydGFsLWludmVzdGlkb3ItaG1nLmF0aXZhY29ycmV0b3JhLmNvbS5icjo4MDgwLyoiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIZW5yaXF1ZSBTb3V6YSIsInByZWZlcnJlZF91c2VybmFtZSI6ImV1QGhlbnJpcXVlZGVzaW1vbmUuY29tLmJyIiwiZ2l2ZW5fbmFtZSI6IkhlbnJpcXVlIiwiZmFtaWx5X25hbWUiOiJTb3V6YSIsImVtYWlsIjoiZXVAaGVucmlxdWVkZXNpbW9uZS5jb20uYnIifQ.-SR5heDZGb6RiA676CY75ckN9dtMizRHXIizmoCxNfc",
-				"type": "bearer"
-			},
-			"body": {},
-			"created": 1548372073078,
-			"description": "",
-			"headers": [],
-			"isPrivate": false,
-			"metaSortKey": -1548372073078,
-			"method": "GET",
-			"modified": 1548372375991,
-			"name": "My Request",
-			"parameters": [
-				{
-					"id": "pair_98a61e50926a4cf6a55bec13e7206127",
-					"name": "emailPrincipal",
-					"value": "eu@henriquedesimone.com.br"
-				}
-			],
-			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
-			"settingDisableRenderRequestBody": false,
-			"settingEncodeUrl": true,
-			"settingMaxTimelineDataSize": 1000,
-			"settingRebuildPath": true,
-			"settingSendCookies": true,
-			"settingStoreCookies": true,
-			"url": "https://api.hmg.investidor.ativacorretora.com.br/pessoas",
-			"_type": "request"
 		},
 		{
 			"_id": "env_766e64e30ee54ce5b340f61104fb3793",
@@ -297,6 +229,17 @@
 			"metaSortKey": -1549898440385,
 			"modified": 1549898440385,
 			"name": "Arquivos",
+			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_8c530f24155440689c0138f139c63f23",
+			"created": 1550239815485,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1549898440435,
+			"modified": 1550239819134,
+			"name": "Cadastro",
 			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
 			"_type": "request_group"
 		},
@@ -1245,7 +1188,7 @@
 				"mimeType": "multipart/form-data",
 				"params": [
 					{
-						"fileName": "C:\\Users\\leoss\\Desktop\\teste\\main-qimg-70e08cee99e218a590c08c518086762f-c.jpg",
+						"fileName": "C:\\Users\\leoss\\Desktop\\teste\\charmie.jpg",
 						"id": "pair_9fd1f1eae7584d038ec1985f5916a0e1",
 						"name": "file",
 						"type": "file",
@@ -1265,7 +1208,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549663005283,
 			"method": "POST",
-			"modified": 1549902335561,
+			"modified": 1549923571114,
 			"name": "Upload de template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1275,7 +1218,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/arquivos/templates/01/teste",
+			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
 			"_type": "request"
 		},
 		{
@@ -1284,11 +1227,22 @@
 			"body": {},
 			"created": 1549902300322,
 			"description": "",
-			"headers": [],
+			"headers": [
+				{
+					"id": "pair_696c7d87cff648999f4657fa7c47f9ba",
+					"name": "",
+					"value": ""
+				},
+				{
+					"id": "pair_53ea24da433547139913acf27803f27a",
+					"name": "",
+					"value": ""
+				}
+			],
 			"isPrivate": false,
 			"metaSortKey": -1549527502278,
 			"method": "GET",
-			"modified": 1549905657361,
+			"modified": 1549926139127,
 			"name": "Download de template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1299,6 +1253,139 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5ea1b99710844e928bf6714804562271",
+			"authentication": {},
+			"body": {},
+			"created": 1550239830421,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550239830421,
+			"method": "GET",
+			"modified": 1550250925079,
+			"name": "Obter endereco por CEP",
+			"parameters": [
+				{
+					"id": "pair_acbea4dbed0c492d85f1e21dee010374",
+					"name": "zipcode",
+					"value": "01309020"
+				}
+			],
+			"parentId": "fld_8c530f24155440689c0138f139c63f23",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/register/endereco",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d1c333e75d1f4d629ab58eec30fc0dde",
+			"authentication": {},
+			"body": {},
+			"created": 1550251080375,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550239830471,
+			"method": "GET",
+			"modified": 1550251093271,
+			"name": "Obter bancos",
+			"parameters": [],
+			"parentId": "fld_8c530f24155440689c0138f139c63f23",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/register/banks",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7e1c9281223841c2bb00ed1f181510e3",
+			"authentication": {},
+			"body": {},
+			"created": 1550251103567,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550239830446,
+			"method": "GET",
+			"modified": 1550251246993,
+			"name": "Obter profissoes",
+			"parameters": [],
+			"parentId": "fld_8c530f24155440689c0138f139c63f23",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/register/professions",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d1a6c2db0a0e484ca230a5390a0b8b7e",
+			"authentication": {},
+			"body": {},
+			"created": 1550251118267,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550239830433.5,
+			"method": "GET",
+			"modified": 1550251131370,
+			"name": "Obter assessores",
+			"parameters": [
+				{
+					"id": "pair_952feb7f5b6a468486a72675d94bbc07",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "fld_8c530f24155440689c0138f139c63f23",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/register/advisors",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fb38243f50dc43ee91ffc8105c0704b7",
+			"authentication": {},
+			"body": {},
+			"created": 1550251687464,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549951417852,
+			"method": "GET",
+			"modified": 1550251750273,
+			"name": "Obter cidades",
+			"parameters": [
+				{
+					"id": "pair_acbea4dbed0c492d85f1e21dee010374",
+					"name": "zipcode",
+					"value": "01309020"
+				}
+			],
+			"parentId": "fld_8c530f24155440689c0138f139c63f23",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/register/cidades",
 			"_type": "request"
 		},
 		{
