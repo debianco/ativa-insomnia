@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-02-15T17:29:20.479Z",
+	"__export_date": "2019-02-19T19:07:45.073Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -1222,6 +1222,29 @@
 			"_type": "request"
 		},
 		{
+			"_id": "req_5d812a0b139c453f85b575ff633a1a03",
+			"authentication": {},
+			"body": {},
+			"created": 1549890218094,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549663005333,
+			"method": "POST",
+			"modified": 1549913088692,
+			"name": "Validar Documento Pendente",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/validar/0",
+			"_type": "request"
+		},
+		{
 			"_id": "req_f5b3926b526b4784a0e609cd407b5e55",
 			"authentication": {},
 			"body": {},
@@ -1253,6 +1276,147 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
+			"_type": "request"
+		},
+		{
+			"_id": "req_df7433c00fcf48958b1de400835528b3",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"extensaoArquivo\": \".docx\",\n\t\"enviado\": true\n}"
+			},
+			"created": 1549913078683,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_393fae4c77ce4d1fb8a0ff2f0aab9779",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549913078683,
+			"method": "POST",
+			"modified": 1549913508975,
+			"name": "Salvar Upload",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d1ea5ba4eeac4beb8403363072006091",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"fileName": "C:\\Users\\Alexandre Veronezi\\Downloads\\charmie-teste.jpeg",
+						"id": "pair_5b490b25f84d44628f4a4e68012218e3",
+						"name": "file",
+						"type": "file",
+						"value": ""
+					}
+				]
+			},
+			"created": 1550263231787,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_daac6d1c00294947b1ce35010ad895d6",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549595253780.5,
+			"method": "POST",
+			"modified": 1550525993627,
+			"name": "Upload de Imagens",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/imagens/01",
+			"_type": "request"
+		},
+		{
+			"_id": "req_33e1c57f8c90460b8a4c93d18fc13b6c",
+			"authentication": {},
+			"body": {},
+			"created": 1550498943234,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549561378029.25,
+			"method": "GET",
+			"modified": 1550599341433,
+			"name": "Download imagens",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/imagens/01",
+			"_type": "request"
+		},
+		{
+			"_id": "req_414f5f6afb0b41da90824567e509fe6b",
+			"authentication": {},
+			"body": {},
+			"created": 1550529320840,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549913078733,
+			"method": "DELETE",
+			"modified": 1550529354003,
+			"name": "Deletar template",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
+			"_type": "request"
+		},
+		{
+			"_id": "req_51ca410ca04b42fcb2f6f900c157c6ad",
+			"authentication": {},
+			"body": {},
+			"created": 1550529715983,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550529715983,
+			"method": "DELETE",
+			"modified": 1550598807371,
+			"name": "Deletar Imagens",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/imagens/01/WvHEcBa.jVfoS7jnj3dd.lZcypEJnfW2",
 			"_type": "request"
 		},
 		{
