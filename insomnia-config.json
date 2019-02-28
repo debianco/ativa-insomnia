@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-02-19T19:07:45.073Z",
+	"__export_date": "2019-02-28T14:29:34.116Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -91,11 +91,14 @@
 						"password_test": "135791",
 						"realm": "ativa-demo"
 					}
+				},
+				"pessoa": {
+					"id": "c066c9b5-7cb9-4353-b92c-c784bec28c55"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1548273750592,
+			"modified": 1551364091605,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -1417,6 +1420,52 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/imagens/01/WvHEcBa.jVfoS7jnj3dd.lZcypEJnfW2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9c0aac65a886469991ea0166fb7cfece",
+			"authentication": {},
+			"body": {},
+			"created": 1551204372517,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551204372517,
+			"method": "GET",
+			"modified": 1551228799362,
+			"name": "Listar documentos pedentes",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1813a9d50fb1445299f9148ba37a23c6",
+			"authentication": {},
+			"body": {},
+			"created": 1551302332515,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549527502228,
+			"method": "GET",
+			"modified": 1551364085611,
+			"name": "Download documentos",
+			"parameters": [],
+			"parentId": "fld_93aae746026246ee87410332555ad770",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/1.doc",
 			"_type": "request"
 		},
 		{
