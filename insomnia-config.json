@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-02-28T14:29:34.116Z",
+	"__export_date": "2019-03-13T19:06:01.217Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -93,12 +93,12 @@
 					}
 				},
 				"pessoa": {
-					"id": "c066c9b5-7cb9-4353-b92c-c784bec28c55"
+					"id": "6f74857f-1fa4-4e64-8a22-099a7345b225"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1551364091605,
+			"modified": 1552066827692,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -1130,6 +1130,17 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "fld_f16f456840a04c6393270f5f811a313f",
+			"created": 1552325814391,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1552325814391,
+			"modified": 1552325814391,
+			"name": "Conclusao",
+			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
+			"_type": "request_group"
+		},
+		{
 			"_id": "req_50a3a88d88c34910b2eb8a6b457a77f2",
 			"authentication": {},
 			"body": {},
@@ -1234,7 +1245,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549663005333,
 			"method": "POST",
-			"modified": 1549913088692,
+			"modified": 1552064954956,
 			"name": "Validar Documento Pendente",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1244,7 +1255,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/validar/0",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/validar/1",
 			"_type": "request"
 		},
 		{
@@ -1285,8 +1296,16 @@
 			"_id": "req_df7433c00fcf48958b1de400835528b3",
 			"authentication": {},
 			"body": {
-				"mimeType": "application/json",
-				"text": "{\n\t\"extensaoArquivo\": \".docx\",\n\t\"enviado\": true\n}"
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"fileName": "C:\\Users\\Alexandre Veronezi\\Downloads\\DeveloperRuivo.png",
+						"id": "pair_d982e884e0a0444f923778a9b1388fd8",
+						"name": "file",
+						"type": "file",
+						"value": ""
+					}
+				]
 			},
 			"created": 1549913078683,
 			"description": "",
@@ -1294,14 +1313,14 @@
 				{
 					"id": "pair_393fae4c77ce4d1fb8a0ff2f0aab9779",
 					"name": "Content-Type",
-					"value": "application/json"
+					"value": "multipart/form-data"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1549913078683,
 			"method": "POST",
-			"modified": 1549913508975,
-			"name": "Salvar Upload",
+			"modified": 1552399581628,
+			"name": "Upload Documento",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
 			"settingDisableRenderRequestBody": false,
@@ -1310,7 +1329,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/1",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/2.doc",
 			"_type": "request"
 		},
 		{
@@ -1363,7 +1382,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549561378029.25,
 			"method": "GET",
-			"modified": 1550599341433,
+			"modified": 1551460428858,
 			"name": "Download imagens",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1373,7 +1392,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/imagens/01",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/imagens/portrait",
 			"_type": "request"
 		},
 		{
@@ -1432,7 +1451,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1551204372517,
 			"method": "GET",
-			"modified": 1551228799362,
+			"modified": 1552066804848,
 			"name": "Listar documentos pedentes",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1606,7 +1625,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"dadosAcessoId\": \"fd6a2cf3-1d8f-4a85-979f-195dd9cf4200\",\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"nome\": \"Alexandre Veronezi\",\n\t\"documento\": \"48077185096\",\n\t\"tipoDocumento\": 0\n}"
+				"text": "{\n\t\"dadosAcessoId\": \"93ad639c-462c-4db2-9b6e-2b1e4bb372db\",\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"nome\": \"Alexandre Veronezi\",\n\t\"documento\": \"48077185096\",\n\t\"tipoDocumento\": 0\n}"
 			},
 			"created": 1545072681591,
 			"description": "",
@@ -1625,7 +1644,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547137206044,
 			"method": "POST",
-			"modified": 1547656454854,
+			"modified": 1552064122754,
 			"name": "Criar Pessoa",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1655,9 +1674,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1546928564074,
+			"metaSortKey": -1547069243647.125,
 			"method": "PATCH",
-			"modified": 1547572968256,
+			"modified": 1552432635006,
 			"name": "Endereço",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1667,7 +1686,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1675,7 +1694,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"profissao\",\n\t\"codigoProfissao\": \"234\",\n\t\"nomeEmpresa\": \"Resource Company Ltda\"\n}"
+				"text": "{\n\t\"atualizar\": \"profissao\",\n\t\"codigoProfissao\": \"123\",\n\t\"nomeEmpresa\": \"Resource Company Ltda\"\n}"
 			},
 			"created": 1546966040684,
 			"description": "",
@@ -1689,7 +1708,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546966040684,
 			"method": "PATCH",
-			"modified": 1547470970056,
+			"modified": 1552420411412,
 			"name": "Profissao",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1699,7 +1718,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1707,7 +1726,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"assessor\",\n\t\"assessor\": {\n\t\t\"habilitado\": true,\n\t\t\"codigo\": \"45343\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"assessor\",\n\t\"assessor\": {\n\t\t\"habilitado\": false,\n\t\t\"codigo\": \"\"\n\t}\n}"
 			},
 			"created": 1546976815978,
 			"description": "",
@@ -1719,9 +1738,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1546976815978,
+			"metaSortKey": -1547137206019,
 			"method": "PATCH",
-			"modified": 1549464263287,
+			"modified": 1552432626392,
 			"name": "Assessor",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1731,7 +1750,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1751,9 +1770,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1546983485531,
+			"metaSortKey": -1547082836116.5,
 			"method": "PATCH",
-			"modified": 1547571999788,
+			"modified": 1552432629031,
 			"name": "Documentos",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1763,7 +1782,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1771,7 +1790,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"procurador\",\n\t\"emancipado\": 1,\n\t\"procurador\": {\n\t\t\"nome\": \"Jorge Bolsonaro Dunha\",\n\t\t\"documento\": \"457392191\",\n\t\t\"tipoDocumento\": 1,\n\t\t\"email\": \"jorge@bolsonaro.com.br\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"procurador\",\n\t\"emancipado\": false,\n\t\"procurador\": {\n\t\t\"nome\": \"Jorge Bolsonaro Dunha\",\n\t\t\"documento\": \"457392191\",\n\t\t\"tipoDocumento\": 1,\n\t\t\"email\": \"jorge@bolsonaro.com.br\"\n\t}\n}"
 			},
 			"created": 1547042338236,
 			"description": "",
@@ -1785,7 +1804,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547042338236,
 			"method": "PATCH",
-			"modified": 1547574058621,
+			"modified": 1552427797927,
 			"name": "Procurador",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1795,7 +1814,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1803,7 +1822,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"identificacao\",\n\t\"documento\": \"40045958866\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Joana da Penha\",\n\t\"nomeSocial\": \"Maria Joana\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"2014-09-03T12:13:16.0402932-03:00\",\n\t\"pais\": \"Brasil\",\n\t\"estadoCivil\": 0,\n\t\"nomeConjuge\": \"Conjuge da Joana\",\n\t\"nomeMae\": \"Mae da Joana\",\n\t\"nomePai\": \"Pai da Joana\",\n\t\"uf\": \"SP\"\n}"
+				"text": "{\n\t\"atualizar\": \"identificacao\",\n\t\"documento\": \"40045958866\",\n\t\"tipoDocumento\": 0,\n\t\"nome\": \"Joana da Penha\",\n\t\"nomeSocial\": \"Maria Joana\",\n\t\"sexo\": 1,\n\t\"dataNascimentoOuFundacao\": \"1994-09-03T12:13:16.0402932-03:00\",\n\t\"nacionalidade\": 1,\n\t\"pais\": \"Brasil\",\n\t\"estadoCivil\": 2,\n\t\"nomeConjuge\": \"\",\n\t\"nomeMae\": \"Mae da Joana\",\n\t\"nomePai\": \"Pai da Joana\",\n\t\"estado\": \"SP\"\n}"
 			},
 			"created": 1547064712824,
 			"description": "",
@@ -1817,7 +1836,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547064712824,
 			"method": "PATCH",
-			"modified": 1547489753202,
+			"modified": 1552429537774,
 			"name": "Identificacao",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1827,7 +1846,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1847,9 +1866,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1547137205994,
+			"metaSortKey": -1547137206012.75,
 			"method": "PATCH",
-			"modified": 1547580207635,
+			"modified": 1552433150641,
 			"name": "Contatos",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1859,7 +1878,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/562d388a-df39-40ef-95c0-414a9dee4041",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1867,7 +1886,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"domiciliosFiscais\",\n\t\"domiciliosFiscais\": {\n\t\t\"habilitado\": true,\n\t\t\"pais\": \"Brasil\",\n\t\t\"codigoContribuinte\": \"171\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"domiciliosFiscais\",\n\t\"domiciliosFiscais\": {\n\t\t\"habilitado\": false,\n\t\t\"pais\": \"\",\n\t\t\"codigoContribuinte\": \"\"\n\t}\n}"
 			},
 			"created": 1549404340790,
 			"description": "",
@@ -1879,9 +1898,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1546971428331,
+			"metaSortKey": -1547073774470.25,
 			"method": "PATCH",
-			"modified": 1549407583657,
+			"modified": 1552432632024,
 			"name": "Domicilios Fiscais",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1891,7 +1910,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1899,7 +1918,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"residenciaPermanente\",\n\t\"residenciaPermanente\": {\n\t\t\"habilitado\": true,\n\t\t\"pais\": \"Brasil\",\n\t\t\"codigoContribuinte\": \"171\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"residenciaPermanente\",\n\t\"residenciaPermanente\": {\n\t\t\"habilitado\": false,\n\t\t\"pais\": \"\",\n\t\t\"codigoContribuinte\": \"\"\n\t}\n}"
 			},
 			"created": 1549463843154,
 			"description": "",
@@ -1913,7 +1932,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546968734507.5,
 			"method": "PATCH",
-			"modified": 1549463937240,
+			"modified": 1552420774389,
 			"name": "Residencia Permanente",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1923,7 +1942,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1931,7 +1950,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"cidadaoOuNatural\",\n\t\"cidadaoOuNatural\": {\n\t\t\"habilitado\": true,\n\t\t\"pais\": \"Brasil\",\n\t\t\"codigoContribuinte\": \"171\"\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"cidadaoOuNatural\",\n\t\"cidadaoOuNatural\": {\n\t\t\"habilitado\": false,\n\t\t\"pais\": \"\",\n\t\t\"codigoContribuinte\": \"\"\n\t}\n}"
 			},
 			"created": 1549464003220,
 			"description": "",
@@ -1943,9 +1962,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1546967387595.75,
+			"metaSortKey": -1547137206006.5,
 			"method": "PATCH",
-			"modified": 1549464061599,
+			"modified": 1552432640323,
 			"name": "Cidadao Ou Natural",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1955,7 +1974,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1963,7 +1982,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"operaContaTerceiro\",\n\t\"operaContaTerceiro\": {\n\t\t\"habilitado\": true,\n\t\t\"nome\": \"Alexandre Veronezi\",\n\t\t\"documento\": \"30314415831\",\n\t\t\"tipoDocumento\": 0\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"operaContaTerceiro\",\n\t\"operaContaTerceiro\": {\n\t\t\"habilitado\": false,\n\t\t\"nome\": \"\",\n\t\t\"documento\": \"\",\n\t\t\"tipoDocumento\": null\n\t}\n}"
 			},
 			"created": 1549464322081,
 			"description": "",
@@ -1977,7 +1996,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546974122154.5,
 			"method": "PATCH",
-			"modified": 1549464427132,
+			"modified": 1552422621949,
 			"name": "Opera Conta Terceiro",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -1987,7 +2006,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -1995,7 +2014,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"ordemServicoProcurador\",\n\t\"ordemServicoProcurador\": {\n\t\t\"habilitado\": true,\n\t\t\"nome\": \"Alexandre Veronezi\",\n\t\t\"documento\": \"30314415831\",\n\t\t\"tipoDocumento\": 0\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"ordemServicoProcurador\",\n\t\"ordemServicoProcurador\": {\n\t\t\"habilitado\": false,\n\t\t\"nome\": \"\",\n\t\t\"documento\": \"\",\n\t\t\"tipoDocumento\": null\n\t}\n}"
 			},
 			"created": 1549464447482,
 			"description": "",
@@ -2009,7 +2028,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546972775242.75,
 			"method": "PATCH",
-			"modified": 1549464465557,
+			"modified": 1552422590100,
 			"name": "Ordem Servico Procurador",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -2019,7 +2038,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -2027,7 +2046,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"politicamenteExposta\",\n\t\"politicamenteExposta\": {\n\t\t\"habilitado\": true\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"politicamenteExposta\",\n\t\"politicamenteExposta\": {\n\t\t\"habilitado\": false\n\t}\n}"
 			},
 			"created": 1549464490953,
 			"description": "",
@@ -2041,7 +2060,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546972101786.875,
 			"method": "PATCH",
-			"modified": 1549464519195,
+			"modified": 1552422462269,
 			"name": "Politicamente Exposta",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -2051,7 +2070,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -2059,7 +2078,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"atualizar\": \"tipoInvestidor\",\n\t\"tipoInvestidor\": {\n\t\t\"habilitado\": true,\n\t\t\"tipoInvestidor\": 0\n\t}\n}"
+				"text": "{\n\t\"atualizar\": \"tipoInvestidor\",\n\t\"tipoInvestidor\": {\n\t\t\"habilitado\": false,\n\t\t\"tipoInvestidor\": null\n\t}\n}"
 			},
 			"created": 1549464541745,
 			"description": "",
@@ -2073,7 +2092,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1546971765058.9375,
 			"method": "PATCH",
-			"modified": 1549464577609,
+			"modified": 1552421422847,
 			"name": "Tipo Investidor",
 			"parameters": [],
 			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
@@ -2083,7 +2102,135 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/2db1e836-e51c-49dd-a7f5-806a40af78e6",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_78df81c9ad1b4e06948dddc5eda4812a",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"contasBancarias\",\n\t\"contasBancarias\": [\n\t\t{\n\t\t\t\"banco\": 12,\n\t\t\t\"agencia\": 1,\n\t\t\t\"conta\": 231231,\n\t\t\t\"digito\": 2,\n\t\t\t\"principal\": false,\n\t\t\t\"conjunta\": false,\n\t\t\t\"tipoDocumentoParticipante\": null,\n\t\t\t\"documentoParticipante\": \"\",\n\t\t\t\"nomeParticipante\": \"\"\n\t\t}\n\t]\n}"
+			},
+			"created": 1552432620250,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_570e7b3933fb4b458f86da450b9ef23d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547100959409,
+			"method": "PATCH",
+			"modified": 1552436175215,
+			"name": "Contas Bancarias",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ba3bbf50734d42a285c7769cb7dc0baf",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"situacaoPatrimonial\",\n\t\"situacaoPatrimonial\": {\n\t\t\"renda\": null,\n\t\t\"outrosBens\": null,\n\t\t\"aplicacoesFinanceiras\": null\n\t}\n}"
+			},
+			"created": 1552436259831,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0f10adeb23784eb5915110aa9dd30918",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546967387595.75,
+			"method": "PATCH",
+			"modified": 1552436766616,
+			"name": "Situacao Patrimonial",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_baaa732458e9469bbc11eba272567288",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"origemRecursos\",\n\t\"origemRecursos\": {\n\t\t\"ocupacaoProfissional\": false,\n\t\t\"heranca\": false,\n\t\t\"doacao\": false,\n\t\t\"partilha\": true,\n\t\t\"aluguel\": true,\n\t\t\"outros\": false,\n\t\t\"descricaoOutros\": \"\"\n\t}\n}"
+			},
+			"created": 1552436831297,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1a9fd2879b9e4b83a7bb4c7435012926",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546972438514.8125,
+			"method": "PATCH",
+			"modified": 1552436974639,
+			"name": "Origem de Recursos",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d0825f204b034fa28411325c9bffdfd1",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"atualizar\": \"propositoInvestimento\",\n\t\"propositoInvestimento\": {\n\t\t\"fundos\": false,\n\t\t\"rendaFixa\": true,\n\t\t\"rendaVariavel\": true,\n\t\t\"tesouroDireto\": true,\n\t\t\"derivativos\": false,\n\t\t\"cambio\": false,\n\t\t\"coe\": false,\n\t\t\"previdencia\": true,\n\t\t\"outros\": false,\n\t\t\"descricaoOutros\": null\n\t}\n}"
+			},
+			"created": 1552437024783,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_29ecb43e673e421ba6d2403e42c24011",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546971933422.9062,
+			"method": "PATCH",
+			"modified": 1552437151095,
+			"name": "Proposito Investimento",
+			"parameters": [],
+			"parentId": "fld_45d2b0462f214a23a45635ac2be03031",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -2096,7 +2243,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469960020,
 			"method": "GET",
-			"modified": 1548885607951,
+			"modified": 1551887337207,
 			"name": "Listar por email",
 			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
@@ -2106,7 +2253,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url }}",
+			"url": "{{ gateway.base_url }}/pessoas?emailPrincipal=alexandre.sveronezi@gmail.com",
 			"_type": "request"
 		},
 		{
@@ -2119,7 +2266,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469966403,
 			"method": "GET",
-			"modified": 1547483849807,
+			"modified": 1552412139247,
 			"name": "Obter por id",
 			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
@@ -2129,7 +2276,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}",
 			"_type": "request"
 		},
 		{
@@ -2153,6 +2300,46 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/pessoas/{% uuid 'v4' %}/status-cadastro",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ae0fa8a3306d4686a503b7e474ec5e5f",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"fileName": "C:\\Users\\Alexandre Veronezi\\Downloads\\ATIVA INVESTIMENTOS - PROXY GUIDE.pdf",
+						"id": "pair_ce96772dd5644ac6a2b05643ea91640a",
+						"name": "file",
+						"type": "file",
+						"value": ""
+					}
+				]
+			},
+			"created": 1552326034485,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_d983df677ecb412da41e4472cea8da44",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552326034485,
+			"method": "PATCH",
+			"modified": 1552411007800,
+			"name": "completar cadastro",
+			"parameters": [],
+			"parentId": "fld_f16f456840a04c6393270f5f811a313f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/conclusao/6.pdf",
 			"_type": "request"
 		}
 	]
