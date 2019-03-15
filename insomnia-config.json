@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-13T19:06:01.217Z",
+	"__export_date": "2019-03-15T23:18:14.820Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -29,7 +29,7 @@
 			"_id": "jar_b71c8c3c1fef4352b0f1a1f7d3aac54a",
 			"cookies": [],
 			"created": 1539008053014,
-			"modified": 1548273336941,
+			"modified": 1552504171447,
 			"name": "Default Jar",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "cookie_jar"
@@ -57,15 +57,69 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "fld_42dc3dd51322478cb2ac5277ca707d8f",
+			"created": 1552605410193,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1552605410194,
+			"modified": 1552605410193,
+			"name": "Api Sinacor",
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_a316d8b390bc4b62878b28ddc00fcca1",
+			"authentication": {
+				"disabled": false,
+				"password": "guest",
+				"type": "basic",
+				"username": "guest"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"auto_delete\": false,\n\t\"durable\": true,\n\t\"arguments\": {}\n}"
+			},
+			"created": 1551913029972,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3254d27354b14cacb08ebee6e0888d27",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551913029972,
+			"method": "PUT",
+			"modified": 1551913562770,
+			"name": "Criar MAILING.queue no RabbitMQ",
+			"parameters": [],
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:15672/api/queues/%2f/MAILING.queue",
+			"_type": "request"
+		},
+		{
 			"_id": "env_766e64e30ee54ce5b340f61104fb3793",
 			"color": "#55df7e",
 			"created": 1539010328223,
 			"data": {
+				"api_sinacor": {
+					"base_url": "{{ api_sinacor.protocol }}://{{ api_sinacor.host }}:{{ api_sinacor.port }}",
+					"host": "localhost",
+					"port": 443,
+					"protocol": "https"
+				},
 				"gateway": {
-					"base_url": "{{ gateway.protocol  }}//{{ gateway.host  }}:{{ gateway.port  }}",
+					"base_url": "{{ gateway.protocol  }}://{{ gateway.host  }}:{{ gateway.port  }}",
 					"host": "localhost",
 					"port": 3000,
-					"protocol": "https:"
+					"protocol": "https"
 				},
 				"keycloak": {
 					"admin": {
@@ -93,12 +147,12 @@
 					}
 				},
 				"pessoa": {
-					"id": "6f74857f-1fa4-4e64-8a22-099a7345b225"
+					"id": "562d388a-df39-40ef-95c0-414a9dee4041"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1552066827692,
+			"modified": 1552605711329,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -245,6 +299,38 @@
 			"name": "Cadastro",
 			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
 			"_type": "request_group"
+		},
+		{
+			"_id": "req_259318998b0a4c55996984cc25136aeb",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"tipoRegistroCadastro\": null,\n\t\"documento\": \"49915757964\",\n\t\"dataCriacao\": \"2019-03-15T21:24:08.816811Z\",\n\t\"dataAtualizacao\": \"2019-03-15T21:24:08.9201059Z\",\n\t\"dataNascimentoOuFundacao\": \"2002-02-13T10:01:42.1787027-03:00\",\n\t\"codigoDependencia\": 1,\n\t\"tipoPessoa\": \"F\",\n\t\"nomeCliente\": \"Matthew Herman\",\n\t\"sexo\": \"M\",\n\t\"nomePai\": \"Rudolph Prohaska\",\n\t\"nomeMae\": \"Tiffany Ernser\",\n\t\"tipoCliente\": 1,\n\t\"tipoClienteBol\": 1,\n\t\"tipoImpostoRenda\": 3,\n\t\"logradouro\": \"Bins Garden\",\n\t\"numeroLogradouro\": \"391\",\n\t\"complemento\": \"asdasdasdasda\",\n\t\"bairro\": \"Avon\",\n\t\"cidade\": \"New Terrill\",\n\t\"siglaEstado\": \"SP\",\n\t\"cep\": \"209748340\",\n\t\"siglaPais\": \"BR\",\n\t\"nacionalidade\": 2,\n\t\"codigoEstadoCivil\": 4,\n\t\"tipoDocumento\": \"Cpf\",\n\t\"orgaoEmissor\": \"RFB\",\n\t\"codigoAtividade\": 259,\n\t\"codigoAssessor\": 21,\n\t\"codigoAgente\": 1,\n\t\"ehPessoaVinculada\": true,\n\t\"codigoCliente\": null,\n\t\"digitoCliente\": null,\n\t\"recebeDividendos\": true,\n\t\"percentualDevolucaoCorretagem\": \"0\",\n\t\"operaCarteiraPropria\": true,\n\t\"codigoOrigem\": 1,\n\t\"situacaoCliente\": \"A\",\n\t\"email\": \"Matthew0@gmail.com\",\n\t\"ehCVM286\": false,\n\t\"nomeConjuge\": \"Hiram Hahn\",\n\t\"codigoBMF\": 0,\n\t\"ehClienteInstitucional\": false,\n\t\"corretagemMaxima\": 0,\n\t\"taxaPercentual\": 0,\n\t\"temSociedade\": false,\n\t\"temCobrancaDaTaxaDoAgenteDeCompensacao\": true,\n\t\"temBrokeragem\": false,\n\t\"temPatrimonioLiquidoDeclarado\": false,\n\t\"temIntegracaoContaCorrente\": true,\n\t\"temIntegracaoCorretagem\": false,\n\t\"naoEhResidente\": false,\n\t\"ehLiquidante\": false,\n\t\"temTributacaoEspecial\": false,\n\t\"tipoClienteBMF\": 3032,\n\t\"percetualCorretagemCasa\": 0,\n\t\"valorCorretagemMaximaCasa\": 0,\n\t\"emiteNotaCasa\": true,\n\t\"recebeEmailBVMF\": true,\n\t\"nomeEmpresa\": \"Bogus.DataSets.Company\",\n\t\"codigoBanco\": \"63\",\n\t\"codigoAgencia\": \"24263\",\n\t\"numeroConta\": \"23715\",\n\t\"digitoConta\": \"6\"\n}"
+			},
+			"created": 1552605422074,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_eb3dcb8108c94d8ca718b60a7270997e",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552605422075,
+			"method": "POST",
+			"modified": 1552685786738,
+			"name": "Criar Conta",
+			"parameters": [],
+			"parentId": "fld_42dc3dd51322478cb2ac5277ca707d8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ api_sinacor.base_url }}/conta/criar",
+			"_type": "request"
 		},
 		{
 			"_id": "req_3317db474acb487797f275355253515b",
@@ -1135,8 +1221,8 @@
 			"description": "",
 			"environment": {},
 			"metaSortKey": -1552325814391,
-			"modified": 1552325814391,
-			"name": "Conclusao",
+			"modified": 1552504158332,
+			"name": "Conclusao Cadastro",
 			"parentId": "fld_09d8f12ae65b4f54933a0c31b03facc2",
 			"_type": "request_group"
 		},
@@ -1202,7 +1288,7 @@
 				"mimeType": "multipart/form-data",
 				"params": [
 					{
-						"fileName": "C:\\Users\\leoss\\Desktop\\teste\\charmie.jpg",
+						"fileName": "C:\\Users\\leoss\\Documents\\Resource\\Projetos\\vpn-ativa.PDF",
 						"id": "pair_9fd1f1eae7584d038ec1985f5916a0e1",
 						"name": "file",
 						"type": "file",
@@ -1222,7 +1308,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549663005283,
 			"method": "POST",
-			"modified": 1549923571114,
+			"modified": 1552573607580,
 			"name": "Upload de template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1232,7 +1318,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
+			"url": "{{ gateway.base_url  }}/arquivos/templates/6",
 			"_type": "request"
 		},
 		{
@@ -1279,7 +1365,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549527502278,
 			"method": "GET",
-			"modified": 1549926139127,
+			"modified": 1552573096804,
 			"name": "Download de template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1289,7 +1375,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
+			"url": "{{ gateway.base_url  }}/arquivos/templates/6",
 			"_type": "request"
 		},
 		{
@@ -2309,7 +2395,7 @@
 				"mimeType": "multipart/form-data",
 				"params": [
 					{
-						"fileName": "C:\\Users\\Alexandre Veronezi\\Downloads\\ATIVA INVESTIMENTOS - PROXY GUIDE.pdf",
+						"fileName": "C:\\Source\\GitHub\\ativa-insomnia\\README.md",
 						"id": "pair_ce96772dd5644ac6a2b05643ea91640a",
 						"name": "file",
 						"type": "file",
@@ -2329,8 +2415,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1552326034485,
 			"method": "PATCH",
-			"modified": 1552411007800,
-			"name": "completar cadastro",
+			"modified": 1552513840506,
+			"name": "Enviar termo de aceite",
 			"parameters": [],
 			"parentId": "fld_f16f456840a04c6393270f5f811a313f",
 			"settingDisableRenderRequestBody": false,
