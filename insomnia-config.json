@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-15T23:18:14.820Z",
+	"__export_date": "2019-03-20T00:44:22.026Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -162,6 +162,12 @@
 			"color": "#fdc80f",
 			"created": 1547761167260,
 			"data": {
+				"api_sinacor": {
+					"base_url": "{{ api_sinacor.protocol }}://{{ api_sinacor.host }}:{{ api_sinacor.port }}",
+					"host": "api.hmg.sinacor.ativacorretora.com.br",
+					"port": 443,
+					"protocol": "https"
+				},
 				"gateway": {
 					"base_url": "{{ gateway.protocol  }}://{{ gateway.host  }}:{{ gateway.port  }}",
 					"host": "api.hmg.investidor.ativacorretora.com.br",
@@ -196,7 +202,7 @@
 			},
 			"isPrivate": false,
 			"metaSortKey": 1547761167260,
-			"modified": 1548372562585,
+			"modified": 1552932348473,
 			"name": "Hmg",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -301,11 +307,22 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "fld_8c41a89d0db74e64ada977c7e22acd69",
+			"created": 1553040691490,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1553040691490,
+			"modified": 1553040691490,
+			"name": "Notificacoes",
+			"parentId": "fld_017fa81570d54cdcba26d2a519f63e4a",
+			"_type": "request_group"
+		},
+		{
 			"_id": "req_259318998b0a4c55996984cc25136aeb",
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"tipoRegistroCadastro\": null,\n\t\"documento\": \"49915757964\",\n\t\"dataCriacao\": \"2019-03-15T21:24:08.816811Z\",\n\t\"dataAtualizacao\": \"2019-03-15T21:24:08.9201059Z\",\n\t\"dataNascimentoOuFundacao\": \"2002-02-13T10:01:42.1787027-03:00\",\n\t\"codigoDependencia\": 1,\n\t\"tipoPessoa\": \"F\",\n\t\"nomeCliente\": \"Matthew Herman\",\n\t\"sexo\": \"M\",\n\t\"nomePai\": \"Rudolph Prohaska\",\n\t\"nomeMae\": \"Tiffany Ernser\",\n\t\"tipoCliente\": 1,\n\t\"tipoClienteBol\": 1,\n\t\"tipoImpostoRenda\": 3,\n\t\"logradouro\": \"Bins Garden\",\n\t\"numeroLogradouro\": \"391\",\n\t\"complemento\": \"asdasdasdasda\",\n\t\"bairro\": \"Avon\",\n\t\"cidade\": \"New Terrill\",\n\t\"siglaEstado\": \"SP\",\n\t\"cep\": \"209748340\",\n\t\"siglaPais\": \"BR\",\n\t\"nacionalidade\": 2,\n\t\"codigoEstadoCivil\": 4,\n\t\"tipoDocumento\": \"Cpf\",\n\t\"orgaoEmissor\": \"RFB\",\n\t\"codigoAtividade\": 259,\n\t\"codigoAssessor\": 21,\n\t\"codigoAgente\": 1,\n\t\"ehPessoaVinculada\": true,\n\t\"codigoCliente\": null,\n\t\"digitoCliente\": null,\n\t\"recebeDividendos\": true,\n\t\"percentualDevolucaoCorretagem\": \"0\",\n\t\"operaCarteiraPropria\": true,\n\t\"codigoOrigem\": 1,\n\t\"situacaoCliente\": \"A\",\n\t\"email\": \"Matthew0@gmail.com\",\n\t\"ehCVM286\": false,\n\t\"nomeConjuge\": \"Hiram Hahn\",\n\t\"codigoBMF\": 0,\n\t\"ehClienteInstitucional\": false,\n\t\"corretagemMaxima\": 0,\n\t\"taxaPercentual\": 0,\n\t\"temSociedade\": false,\n\t\"temCobrancaDaTaxaDoAgenteDeCompensacao\": true,\n\t\"temBrokeragem\": false,\n\t\"temPatrimonioLiquidoDeclarado\": false,\n\t\"temIntegracaoContaCorrente\": true,\n\t\"temIntegracaoCorretagem\": false,\n\t\"naoEhResidente\": false,\n\t\"ehLiquidante\": false,\n\t\"temTributacaoEspecial\": false,\n\t\"tipoClienteBMF\": 3032,\n\t\"percetualCorretagemCasa\": 0,\n\t\"valorCorretagemMaximaCasa\": 0,\n\t\"emiteNotaCasa\": true,\n\t\"recebeEmailBVMF\": true,\n\t\"nomeEmpresa\": \"Bogus.DataSets.Company\",\n\t\"codigoBanco\": \"63\",\n\t\"codigoAgencia\": \"24263\",\n\t\"numeroConta\": \"23715\",\n\t\"digitoConta\": \"6\"\n}"
+				"text": "{\n\t\"tipoRegistroCadastro\": null,\n\t\"documento\": \"19375957225\",\n\t\"dataCriacao\": \"2019-03-19T18:38:12.4489318Z\",\n\t\"dataAtualizacao\": \"2019-03-19T18:38:12.6361948Z\",\n\t\"dataNascimentoOuFundacao\": \"2012-09-06T00:00:00-03:00\",\n\t\"codigoDependencia\": 1,\n\t\"tipoPessoa\": \"F\",\n\t\"nomeCliente\": \"Ella Berge\",\n\t\"sexo\": \"F\",\n\t\"nomePai\": \"Kirk Hudson\",\n\t\"nomeMae\": \"Melanie Herman\",\n\t\"tipoCliente\": 1,\n\t\"tipoClienteBol\": 1,\n\t\"tipoImpostoRenda\": 3,\n\t\"logradouro\": \"Hamill Square\",\n\t\"numeroLogradouro\": \"68156\",\n\t\"complemento\": null,\n\t\"bairro\": \"Avon\",\n\t\"cidade\": \"Barbarafort\",\n\t\"siglaEstado\": \"SP\",\n\t\"cep\": \"04893052\",\n\t\"siglaPais\": \"BRA\",\n\t\"nacionalidade\": 2,\n\t\"codigoEstadoCivil\": 1,\n\t\"tipoDocumento\": \"RG\",\n\t\"orgaoEmissor\": \"SSP\",\n\t\"codigoAtividade\": 521,\n\t\"codigoAssessor\": 66,\n\t\"codigoAgente\": 1,\n\t\"ehPessoaVinculada\": true,\n\t\"codigoCliente\": null,\n\t\"digitoCliente\": null,\n\t\"recebeDividendos\": true,\n\t\"percentualDevolucaoCorretagem\": \"0\",\n\t\"operaCarteiraPropria\": false,\n\t\"codigoOrigem\": 1,\n\t\"situacaoCliente\": \"A\",\n\t\"email\": \"Ella.Berge@yahoo.com\",\n\t\"ehCVM286\": false,\n\t\"nomeConjuge\": \"Arnoldo Abernathy\",\n\t\"codigoBMF\": 0,\n\t\"ehClienteInstitucional\": false,\n\t\"corretagemMaxima\": 0,\n\t\"taxaPercentual\": 0,\n\t\"temSociedade\": false,\n\t\"temCobrancaDaTaxaDoAgenteDeCompensacao\": true,\n\t\"temBrokeragem\": false,\n\t\"temPatrimonioLiquidoDeclarado\": false,\n\t\"temIntegracaoContaCorrente\": true,\n\t\"temIntegracaoCorretagem\": false,\n\t\"naoEhResidente\": false,\n\t\"ehLiquidante\": false,\n\t\"temTributacaoEspecial\": false,\n\t\"tipoClienteBMF\": 3032,\n\t\"percetualCorretagemCasa\": 0,\n\t\"valorCorretagemMaximaCasa\": 0,\n\t\"emiteNotaCasa\": true,\n\t\"recebeEmailBVMF\": true,\n\t\"nomeEmpresa\": \"Bogus.DataSets.Company\",\n\t\"dadosBancarios\": [\n\t\t{\n\t\t\t\"codigoCliente\": null,\n\t\t\t\"codigoBanco\": \"76\",\n\t\t\t\"codigoAgencia\": \"26087\",\n\t\t\t\"digitoAgencia\": \"7\",\n\t\t\t\"numeroConta\": \"33451\",\n\t\t\t\"digitoConta\": \"9\",\n\t\t\t\"numeroContaCompl\": null,\n\t\t\t\"ehPrincipal\": true,\n\t\t\t\"ehInativa\": false,\n\t\t\t\"codigoEmpresa\": 147,\n\t\t\t\"codigoUsuario\": 1,\n\t\t\t\"tipoOcorrencia\": \"D\",\n\t\t\t\"tipoConta\": \"CC\",\n\t\t\t\"ehConjunta\": false,\n\t\t\t\"cpfContaConjunta\": null,\n\t\t\t\"nomeContaConjunta\": null\n\t\t},\n\t\t{\n\t\t\t\"codigoCliente\": null,\n\t\t\t\"codigoBanco\": \"17\",\n\t\t\t\"codigoAgencia\": \"28538\",\n\t\t\t\"digitoAgencia\": \"8\",\n\t\t\t\"numeroConta\": \"26953\",\n\t\t\t\"digitoConta\": \"7\",\n\t\t\t\"numeroContaCompl\": null,\n\t\t\t\"ehPrincipal\": true,\n\t\t\t\"ehInativa\": false,\n\t\t\t\"codigoEmpresa\": 147,\n\t\t\t\"codigoUsuario\": 1,\n\t\t\t\"tipoOcorrencia\": \"D\",\n\t\t\t\"tipoConta\": \"CC\",\n\t\t\t\"ehConjunta\": false,\n\t\t\t\"cpfContaConjunta\": null,\n\t\t\t\"nomeContaConjunta\": null\n\t\t}\n\t],\n\t\"nomeEmitente\": \"Carla Wisozk\",\n\t\"cpfCnpjEmitente\": \"24126013626\",\n\t\"ehPoliticamenteExposta\": true\n}"
 			},
 			"created": 1552605422074,
 			"description": "",
@@ -319,7 +336,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552605422075,
 			"method": "POST",
-			"modified": 1552685786738,
+			"modified": 1553020754671,
 			"name": "Criar Conta",
 			"parameters": [],
 			"parentId": "fld_42dc3dd51322478cb2ac5277ca707d8f",
@@ -330,6 +347,70 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ api_sinacor.base_url }}/conta/criar",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8520666caa5f4413977c9e51e1047fd9",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"personId\": \"f1bf6f10-fc4c-4fbd-ad78-704d2f25491c\",\n\t\"type\": 1,\n\t\"contentType\": \"Complex\",\n\t\"content\": {\n\t\t\"businessError\": \"Informação para a conta se é conjunta não foi definida; \"\n\t}\n}"
+			},
+			"created": 1552935991909,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5afeb4eba6e04bc2a3a03f186ad3b201",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552465728280,
+			"method": "DELETE",
+			"modified": 1553040309633,
+			"name": "Deletar Conta Bancaria de Pessoa Sinacor",
+			"parameters": [],
+			"parentId": "fld_42dc3dd51322478cb2ac5277ca707d8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ api_sinacor.base_url }}/teste/conta/remover-conta-bancaria/91955",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b40889b03aa9474bad2b6e6088efa8bb",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"codigoCliente\": \"91955\",\n\t\"codigoBanco\": \"22\",\n\t\"codigoAgencia\": \"10454\",\n\t\"digitoAgencia\": \"4\",\n\t\"numeroConta\": \"95603\",\n\t\"digitoConta\": \"5\",\n\t\"numeroContaCompl\": null,\n\t\"ehPrincipal\": true,\n\t\"ehInativa\": false,\n\t\"codigoEmpresa\": 147,\n\t\"codigoUsuario\": 1,\n\t\"tipoOcorrencia\": \"D\",\n\t\"tipoConta\": \"CC\",\n\t\"ehConjunta\": false,\n\t\"cpfContaConjunta\": null,\n\t\"nomeContaConjunta\": null\n}"
+			},
+			"created": 1552936143308,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4f5bdb83937a42aaaf76f22f1e04a37b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1552395881382.5,
+			"method": "POST",
+			"modified": 1552950585473,
+			"name": "Criar Conta Bancaria de Pessoa Sinacor (Copy)",
+			"parameters": [],
+			"parentId": "fld_42dc3dd51322478cb2ac5277ca707d8f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ api_sinacor.base_url }}/teste/conta/inserir-conta-bancaria",
 			"_type": "request"
 		},
 		{
@@ -1704,6 +1785,61 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url  }}/register/cidades",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ebd03bd74f434e20a23f816db7a6910d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"personId\": \"f1bf6f10-fc4c-4fbd-ad78-704d2f25491c\",\n    \"type\": 1,\n    \"contentType\": \"Simple\",\n    \"content\": {\n        \"zxdfsd\": \"dfds \"\n    }\n}"
+			},
+			"created": 1553040706593,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_e367e219875343b090084203a5e39ee6",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1553040706593,
+			"method": "POST",
+			"modified": 1553042059381,
+			"name": "Criar notificacao",
+			"parameters": [],
+			"parentId": "fld_8c41a89d0db74e64ada977c7e22acd69",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url}}/notificacoes",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b00196787d28461d96a71dd2ffc5babd",
+			"authentication": {},
+			"body": {},
+			"created": 1553042619742,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1552823064334,
+			"method": "GET",
+			"modified": 1553042643836,
+			"name": "Obter notificacao",
+			"parameters": [],
+			"parentId": "fld_8c41a89d0db74e64ada977c7e22acd69",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url}}/notificacoes/f1bf6f10-fc4c-4fbd-ad78-704d2f25491c",
 			"_type": "request"
 		},
 		{
