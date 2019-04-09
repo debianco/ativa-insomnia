@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-03-20T00:44:22.026Z",
+	"__export_date": "2019-04-09T16:33:23.327Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -27,9 +27,25 @@
 		},
 		{
 			"_id": "jar_b71c8c3c1fef4352b0f1a1f7d3aac54a",
-			"cookies": [],
+			"cookies": [
+				{
+					"creation": "2019-04-02T14:57:59.095Z",
+					"domain": "keycloak.hmg.ativacorretora.com.br",
+					"expires": "1970-01-01T00:00:10.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "14991733821865605",
+					"key": "KC_RESTART",
+					"lastAccessed": "2019-04-02T14:57:59.095Z",
+					"maxAge": 0,
+					"path": "/auth/realms/master/"
+				}
+			],
 			"created": 1539008053014,
-			"modified": 1552504171447,
+			"modified": 1554217079123,
 			"name": "Default Jar",
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
 			"_type": "cookie_jar"
@@ -68,6 +84,17 @@
 			"_type": "request_group"
 		},
 		{
+			"_id": "fld_d9d8dce886034963a394eb8ee484510d",
+			"created": 1554483411925,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1543242507821.5,
+			"modified": 1554483414696,
+			"name": "Gateway-Backoffice",
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"_type": "request_group"
+		},
+		{
 			"_id": "req_a316d8b390bc4b62878b28ddc00fcca1",
 			"authentication": {
 				"disabled": false,
@@ -89,9 +116,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1551913029972,
+			"metaSortKey": -1552605410244,
 			"method": "PUT",
-			"modified": 1551913562770,
+			"modified": 1553099497901,
 			"name": "Criar MAILING.queue no RabbitMQ",
 			"parameters": [],
 			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
@@ -102,6 +129,38 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "http://localhost:15672/api/queues/%2f/MAILING.queue",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5dc6c39821914b8da2772c842fed8d0d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"tipoRegistroCadastro\": null,\n\t\"documento\": \"04001957043\",\n\t\"dataCriacao\": \"2019-03-29T21:33:54.78\",\n\t\"dataAtualizacao\": \"2019-03-29T21:34:02.9559333Z\",\n\t\"dataNascimentoOuFundacao\": \"1997-10-10T00:00:00\",\n\t\"codigoDependencia\": 1,\n\t\"tipoPessoa\": \"F\",\n\t\"nomeCliente\": \"Alexandre Santos\",\n\t\"sexo\": \"M\",\n\t\"nomePai\": \"papito\",\n\t\"nomeMae\": \"mamita\",\n\t\"tipoCliente\": 1,\n\t\"tipoClienteBol\": 1,\n\t\"tipoImpostoRenda\": 3,\n\t\"logradouro\": \"R Aguapeí\",\n\t\"numeroLogradouro\": \"31311\",\n\t\"complemento\": \"bloco IO\",\n\t\"bairro\": \"Vila Santo Estevão\",\n\t\"cidade\": \"São Paulo\",\n\t\"siglaEstado\": \"SP\",\n\t\"cep\": \"03325000\",\n\t\"siglaPais\": \"BRA\",\n\t\"nacionalidade\": 1,\n\t\"codigoEstadoCivil\": 4,\n\t\"tipoDocumento\": \"RG\",\n\t\"orgaoEmissor\": \"SSP\",\n\t\"codigoAtividade\": 292,\n\t\"codigoAssessor\": 4,\n\t\"codigoAgente\": 1,\n\t\"ehPessoaVinculada\": false,\n\t\"codigoCliente\": null,\n\t\"digitoCliente\": null,\n\t\"recebeDividendos\": true,\n\t\"percentualDevolucaoCorretagem\": \"0\",\n\t\"operaCarteiraPropria\": true,\n\t\"codigoOrigem\": 1,\n\t\"situacaoCliente\": \"A\",\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"ehCVM286\": false,\n\t\"nomeConjuge\": null,\n\t\"codigoBMF\": 0,\n\t\"ehClienteInstitucional\": false,\n\t\"corretagemMaxima\": 0,\n\t\"taxaPercentual\": 0,\n\t\"temSociedade\": false,\n\t\"temCobrancaDaTaxaDoAgenteDeCompensacao\": true,\n\t\"temBrokeragem\": false,\n\t\"temPatrimonioLiquidoDeclarado\": false,\n\t\"temIntegracaoContaCorrente\": true,\n\t\"temIntegracaoCorretagem\": false,\n\t\"naoEhResidente\": false,\n\t\"ehLiquidante\": false,\n\t\"temTributacaoEspecial\": false,\n\t\"tipoClienteBMF\": 3032,\n\t\"percetualCorretagemCasa\": 0,\n\t\"valorCorretagemMaximaCasa\": 0,\n\t\"emiteNotaCasa\": true,\n\t\"recebeEmailBVMF\": true,\n\t\"nomeEmpresa\": \"ResourceIT\",\n\t\"dadosBancarios\": [\n\t\t{\n\t\t\t\"codigoCliente\": null,\n\t\t\t\"codigoBanco\": \"25\",\n\t\t\t\"codigoAgencia\": \"3131\",\n\t\t\t\"digitoAgencia\": \"1\",\n\t\t\t\"numeroConta\": \"31\",\n\t\t\t\"digitoConta\": \"1\",\n\t\t\t\"numeroContaCompl\": null,\n\t\t\t\"ehPrincipal\": true,\n\t\t\t\"ehInativa\": false,\n\t\t\t\"codigoEmpresa\": 147,\n\t\t\t\"codigoUsuario\": 1,\n\t\t\t\"tipoOcorrencia\": \"D\",\n\t\t\t\"tipoConta\": \"CC\",\n\t\t\t\"ehConjunta\": false,\n\t\t\t\"cpfContaConjunta\": null,\n\t\t\t\"nomeContaConjunta\": null\n\t\t}\n\t],\n\t\"nomeEmitente\": \"Alexandre Santos\",\n\t\"cpfCnpjEmitente\": \"04001957043\",\n\t\"ehPoliticamenteExposta\": true\n}"
+			},
+			"created": 1553120840929,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_93d1aedecdf54087a06be408a99101eb",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1553120840929,
+			"method": "POST",
+			"modified": 1553900486905,
+			"name": "Criar pessoa sinacor",
+			"parameters": [],
+			"parentId": "wrk_ddc05b32652a43a2b14929e20555da74",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway.base_url  }}/pessoas/sinacor",
 			"_type": "request"
 		},
 		{
@@ -121,38 +180,44 @@
 					"port": 3000,
 					"protocol": "https"
 				},
+				"gateway_backoffice": {
+					"base_url": "{{ gateway_backoffice.protocol }}://{{ gateway_backoffice.host }}:{{ gateway_backoffice.port }}",
+					"host": "localhost",
+					"port": 3006,
+					"protocol": "https"
+				},
 				"keycloak": {
 					"admin": {
 						"authorization_token_url": "/realms/master/protocol/openid-connect/token",
 						"client_id": "admin-cli",
-						"client_secret": "e458039b-5d46-4249-8b71-cd82200aaf5c",
-						"password": "senha",
+						"client_secret": "5d6d2a49-dc11-482d-b173-5106b5198fb5",
+						"password": "admin",
 						"user": "admin"
 					},
-					"base_url": "{{ keycloak.protocol  }}://{{ keycloak.host  }}:{{ keycloak.port  }}/{{ keycloak.path  }}",
+					"base_url": "{{ keycloak.protocol  }}://{{ keycloak.host  }}/{{ keycloak.path  }}",
 					"front": {
 						"client_id": "front-cadastro",
 						"client_secret": "82eaae1f-ca3e-4021-93ea-f0b550b150b2"
 					},
-					"host": "resource-dev.ativacorretora.com.br",
+					"host": "keycloak.hmg.ativacorretora.com.br",
 					"path": "auth",
 					"port": 8081,
 					"protocol": "https",
 					"users": {
 						"email_test": "bolsonaro.mito@gmail.com",
-						"id_test": "bd1a3559-d3f6-4db1-b6d2-74fcb2c13ea3",
+						"id_test": "6002d426-bbdf-4aa6-b3d0-1a69aa3226a0",
 						"name_test": "bolsonaro.mito@gmail.com",
 						"password_test": "135791",
 						"realm": "ativa-demo"
 					}
 				},
 				"pessoa": {
-					"id": "562d388a-df39-40ef-95c0-414a9dee4041"
+					"id": "5a8f9390-2b58-4fdd-8811-f18092857fca"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1539010328223,
-			"modified": 1552605711329,
+			"modified": 1554765206404,
 			"name": "Dev",
 			"parentId": "env_3bf6f31b7c5441849ec046bad61ba3af",
 			"_type": "environment"
@@ -322,7 +387,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"tipoRegistroCadastro\": null,\n\t\"documento\": \"19375957225\",\n\t\"dataCriacao\": \"2019-03-19T18:38:12.4489318Z\",\n\t\"dataAtualizacao\": \"2019-03-19T18:38:12.6361948Z\",\n\t\"dataNascimentoOuFundacao\": \"2012-09-06T00:00:00-03:00\",\n\t\"codigoDependencia\": 1,\n\t\"tipoPessoa\": \"F\",\n\t\"nomeCliente\": \"Ella Berge\",\n\t\"sexo\": \"F\",\n\t\"nomePai\": \"Kirk Hudson\",\n\t\"nomeMae\": \"Melanie Herman\",\n\t\"tipoCliente\": 1,\n\t\"tipoClienteBol\": 1,\n\t\"tipoImpostoRenda\": 3,\n\t\"logradouro\": \"Hamill Square\",\n\t\"numeroLogradouro\": \"68156\",\n\t\"complemento\": null,\n\t\"bairro\": \"Avon\",\n\t\"cidade\": \"Barbarafort\",\n\t\"siglaEstado\": \"SP\",\n\t\"cep\": \"04893052\",\n\t\"siglaPais\": \"BRA\",\n\t\"nacionalidade\": 2,\n\t\"codigoEstadoCivil\": 1,\n\t\"tipoDocumento\": \"RG\",\n\t\"orgaoEmissor\": \"SSP\",\n\t\"codigoAtividade\": 521,\n\t\"codigoAssessor\": 66,\n\t\"codigoAgente\": 1,\n\t\"ehPessoaVinculada\": true,\n\t\"codigoCliente\": null,\n\t\"digitoCliente\": null,\n\t\"recebeDividendos\": true,\n\t\"percentualDevolucaoCorretagem\": \"0\",\n\t\"operaCarteiraPropria\": false,\n\t\"codigoOrigem\": 1,\n\t\"situacaoCliente\": \"A\",\n\t\"email\": \"Ella.Berge@yahoo.com\",\n\t\"ehCVM286\": false,\n\t\"nomeConjuge\": \"Arnoldo Abernathy\",\n\t\"codigoBMF\": 0,\n\t\"ehClienteInstitucional\": false,\n\t\"corretagemMaxima\": 0,\n\t\"taxaPercentual\": 0,\n\t\"temSociedade\": false,\n\t\"temCobrancaDaTaxaDoAgenteDeCompensacao\": true,\n\t\"temBrokeragem\": false,\n\t\"temPatrimonioLiquidoDeclarado\": false,\n\t\"temIntegracaoContaCorrente\": true,\n\t\"temIntegracaoCorretagem\": false,\n\t\"naoEhResidente\": false,\n\t\"ehLiquidante\": false,\n\t\"temTributacaoEspecial\": false,\n\t\"tipoClienteBMF\": 3032,\n\t\"percetualCorretagemCasa\": 0,\n\t\"valorCorretagemMaximaCasa\": 0,\n\t\"emiteNotaCasa\": true,\n\t\"recebeEmailBVMF\": true,\n\t\"nomeEmpresa\": \"Bogus.DataSets.Company\",\n\t\"dadosBancarios\": [\n\t\t{\n\t\t\t\"codigoCliente\": null,\n\t\t\t\"codigoBanco\": \"76\",\n\t\t\t\"codigoAgencia\": \"26087\",\n\t\t\t\"digitoAgencia\": \"7\",\n\t\t\t\"numeroConta\": \"33451\",\n\t\t\t\"digitoConta\": \"9\",\n\t\t\t\"numeroContaCompl\": null,\n\t\t\t\"ehPrincipal\": true,\n\t\t\t\"ehInativa\": false,\n\t\t\t\"codigoEmpresa\": 147,\n\t\t\t\"codigoUsuario\": 1,\n\t\t\t\"tipoOcorrencia\": \"D\",\n\t\t\t\"tipoConta\": \"CC\",\n\t\t\t\"ehConjunta\": false,\n\t\t\t\"cpfContaConjunta\": null,\n\t\t\t\"nomeContaConjunta\": null\n\t\t},\n\t\t{\n\t\t\t\"codigoCliente\": null,\n\t\t\t\"codigoBanco\": \"17\",\n\t\t\t\"codigoAgencia\": \"28538\",\n\t\t\t\"digitoAgencia\": \"8\",\n\t\t\t\"numeroConta\": \"26953\",\n\t\t\t\"digitoConta\": \"7\",\n\t\t\t\"numeroContaCompl\": null,\n\t\t\t\"ehPrincipal\": true,\n\t\t\t\"ehInativa\": false,\n\t\t\t\"codigoEmpresa\": 147,\n\t\t\t\"codigoUsuario\": 1,\n\t\t\t\"tipoOcorrencia\": \"D\",\n\t\t\t\"tipoConta\": \"CC\",\n\t\t\t\"ehConjunta\": false,\n\t\t\t\"cpfContaConjunta\": null,\n\t\t\t\"nomeContaConjunta\": null\n\t\t}\n\t],\n\t\"nomeEmitente\": \"Carla Wisozk\",\n\t\"cpfCnpjEmitente\": \"24126013626\",\n\t\"ehPoliticamenteExposta\": true\n}"
+				"text": "{\n\t\"tipoRegistroCadastro\": null,\n\t\"documento\": \"36832398085\",\n\t\"dataCriacao\": \"2019-03-27T22:16:33.594Z\",\n\t\"dataAtualizacao\": \"2019-03-27T22:16:39.6521964Z\",\n\t\"dataNascimentoOuFundacao\": \"1994-10-10T00:00:00Z\",\n\t\"codigoDependencia\": 1,\n\t\"tipoPessoa\": \"F\",\n\t\"nomeCliente\": \"Dunha Mamota\",\n\t\"sexo\": \"M\",\n\t\"nomePai\": \"papis\",\n\t\"nomeMae\": \"mamis\",\n\t\"tipoCliente\": 1,\n\t\"tipoClienteBol\": 1,\n\t\"tipoImpostoRenda\": 3,\n\t\"logradouro\": \"R Aguapeí\",\n\t\"numeroLogradouro\": \"31313\",\n\t\"complemento\": \"bloco Y\",\n\t\"bairro\": \"Vila Santo Estevão\",\n\t\"cidade\": \"São Paulo\",\n\t\"siglaEstado\": \"SP\",\n\t\"cep\": \"03325000\",\n\t\"siglaPais\": \"BRA\",\n\t\"nacionalidade\": 1,\n\t\"codigoEstadoCivil\": 1,\n\t\"tipoDocumento\": \"RG\",\n\t\"orgaoEmissor\": \"SSP\",\n\t\"codigoAtividade\": 125,\n\t\"codigoAssessor\": 78,\n\t\"codigoAgente\": 1,\n\t\"ehPessoaVinculada\": false,\n\t\"codigoCliente\": null,\n\t\"digitoCliente\": null,\n\t\"recebeDividendos\": true,\n\t\"percentualDevolucaoCorretagem\": \"0\",\n\t\"operaCarteiraPropria\": true,\n\t\"codigoOrigem\": 1,\n\t\"situacaoCliente\": \"A\",\n\t\"email\": \"alexandre.sveronezi@gmail.com\",\n\t\"ehCVM286\": false,\n\t\"nomeConjuge\": null,\n\t\"codigoBMF\": 0,\n\t\"ehClienteInstitucional\": false,\n\t\"corretagemMaxima\": 0,\n\t\"taxaPercentual\": 0,\n\t\"temSociedade\": false,\n\t\"temCobrancaDaTaxaDoAgenteDeCompensacao\": true,\n\t\"temBrokeragem\": false,\n\t\"temPatrimonioLiquidoDeclarado\": false,\n\t\"temIntegracaoContaCorrente\": true,\n\t\"temIntegracaoCorretagem\": false,\n\t\"naoEhResidente\": false,\n\t\"ehLiquidante\": false,\n\t\"temTributacaoEspecial\": false,\n\t\"tipoClienteBMF\": 3032,\n\t\"percetualCorretagemCasa\": 0,\n\t\"valorCorretagemMaximaCasa\": 0,\n\t\"emiteNotaCasa\": true,\n\t\"recebeEmailBVMF\": true,\n\t\"nomeEmpresa\": \"ResourceIT\",\n\t\"dadosBancarios\": [\n\t\t{\n\t\t\t\"codigoCliente\": null,\n\t\t\t\"codigoBanco\": \"912\",\n\t\t\t\"codigoAgencia\": \"3131\",\n\t\t\t\"digitoAgencia\": \"1\",\n\t\t\t\"numeroConta\": \"31313\",\n\t\t\t\"digitoConta\": \"1\",\n\t\t\t\"numeroContaCompl\": null,\n\t\t\t\"ehPrincipal\": true,\n\t\t\t\"ehInativa\": false,\n\t\t\t\"codigoEmpresa\": 147,\n\t\t\t\"codigoUsuario\": 1,\n\t\t\t\"tipoOcorrencia\": \"D\",\n\t\t\t\"tipoConta\": \"CC\",\n\t\t\t\"ehConjunta\": false,\n\t\t\t\"cpfContaConjunta\": null,\n\t\t\t\"nomeContaConjunta\": null\n\t\t}\n\t],\n\t\"nomeEmitente\": \"Dunha Mamota\",\n\t\"cpfCnpjEmitente\": \"36832398085\",\n\t\"ehPoliticamenteExposta\": false\n}"
 			},
 			"created": 1552605422074,
 			"description": "",
@@ -336,7 +401,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1552605422075,
 			"method": "POST",
-			"modified": 1553020754671,
+			"modified": 1553725247102,
 			"name": "Criar Conta",
 			"parameters": [],
 			"parentId": "fld_42dc3dd51322478cb2ac5277ca707d8f",
@@ -412,6 +477,17 @@
 			"settingStoreCookies": true,
 			"url": "{{ api_sinacor.base_url }}/teste/conta/inserir-conta-bancaria",
 			"_type": "request"
+		},
+		{
+			"_id": "fld_eac4b2090c174aa1b8faf78d83c85d08",
+			"created": 1554483428477,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1554483428477,
+			"modified": 1554483428477,
+			"name": "Pessoas",
+			"parentId": "fld_d9d8dce886034963a394eb8ee484510d",
+			"_type": "request_group"
 		},
 		{
 			"_id": "req_3317db474acb487797f275355253515b",
@@ -520,7 +596,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1539008832167.75,
 			"method": "PUT",
-			"modified": 1548273161277,
+			"modified": 1554217095092,
 			"name": "Alterar senha usuario",
 			"parameters": [],
 			"parentId": "fld_3716990b64634460a87a5a35a5c70da4",
@@ -1369,7 +1445,7 @@
 				"mimeType": "multipart/form-data",
 				"params": [
 					{
-						"fileName": "C:\\Users\\leoss\\Documents\\Resource\\Projetos\\vpn-ativa.PDF",
+						"fileName": "C:\\Users\\Alexandre Veronezi\\Downloads\\B2e-CRED-Manual Integração-V2-REST-API.pdf",
 						"id": "pair_9fd1f1eae7584d038ec1985f5916a0e1",
 						"name": "file",
 						"type": "file",
@@ -1389,7 +1465,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549663005283,
 			"method": "POST",
-			"modified": 1552573607580,
+			"modified": 1553609617770,
 			"name": "Upload de template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1399,7 +1475,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/arquivos/templates/6",
+			"url": "{{ gateway.base_url  }}/arquivos/templates/1",
 			"_type": "request"
 		},
 		{
@@ -1412,7 +1488,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549663005333,
 			"method": "POST",
-			"modified": 1552064954956,
+			"modified": 1554745243916,
 			"name": "Validar Documento Pendente",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1422,7 +1498,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/validar/1",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/validar/2",
 			"_type": "request"
 		},
 		{
@@ -1446,7 +1522,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549527502278,
 			"method": "GET",
-			"modified": 1552573096804,
+			"modified": 1553609638949,
 			"name": "Download de template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1456,7 +1532,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/arquivos/templates/6",
+			"url": "{{ gateway.base_url  }}/arquivos/templates/1",
 			"_type": "request"
 		},
 		{
@@ -1484,9 +1560,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1549913078683,
+			"metaSortKey": -1549578315904.875,
 			"method": "POST",
-			"modified": 1552399581628,
+			"modified": 1554745262472,
 			"name": "Upload Documento",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1496,7 +1572,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/2.doc",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/5.png",
 			"_type": "request"
 		},
 		{
@@ -1549,7 +1625,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549561378029.25,
 			"method": "GET",
-			"modified": 1551460428858,
+			"modified": 1553294677565,
 			"name": "Download imagens",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1572,7 +1648,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549913078733,
 			"method": "DELETE",
-			"modified": 1550529354003,
+			"modified": 1553609668641,
 			"name": "Deletar template",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1582,7 +1658,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/arquivos/templates/01",
+			"url": "{{ gateway.base_url  }}/arquivos/templates/1",
 			"_type": "request"
 		},
 		{
@@ -1641,7 +1717,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1549527502228,
 			"method": "GET",
-			"modified": 1551364085611,
+			"modified": 1553543132831,
 			"name": "Download documentos",
 			"parameters": [],
 			"parentId": "fld_93aae746026246ee87410332555ad770",
@@ -1651,7 +1727,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/1.doc",
+			"url": "{{ gateway.base_url  }}/pessoas/{{ pessoa.id  }}/documentos/6.doc",
 			"_type": "request"
 		},
 		{
@@ -1768,13 +1844,13 @@
 			"isPrivate": false,
 			"metaSortKey": -1549951417852,
 			"method": "GET",
-			"modified": 1550251750273,
+			"modified": 1553868959568,
 			"name": "Obter cidades",
 			"parameters": [
 				{
 					"id": "pair_acbea4dbed0c492d85f1e21dee010374",
-					"name": "zipcode",
-					"value": "01309020"
+					"name": "estado",
+					"value": "MG"
 				}
 			],
 			"parentId": "fld_8c530f24155440689c0138f139c63f23",
@@ -1792,7 +1868,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n    \"personId\": \"f1bf6f10-fc4c-4fbd-ad78-704d2f25491c\",\n    \"type\": 1,\n    \"contentType\": \"Simple\",\n    \"content\": {\n        \"zxdfsd\": \"dfds \"\n    }\n}"
+				"text": "{\n\t\"personId\": \"09b0b08c-8159-461c-a361-6a1e321f8160\",\n\t\"type\": 0,\n\t\"contentType\": \"Simple\",\n\t\"content\": {\n\t\t\"message\": \"[ Info ] Dunha, cheira meia!\"\n\t}\n}"
 			},
 			"created": 1553040706593,
 			"description": "",
@@ -1806,7 +1882,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1553040706593,
 			"method": "POST",
-			"modified": 1553042059381,
+			"modified": 1553878297264,
 			"name": "Criar notificacao",
 			"parameters": [],
 			"parentId": "fld_8c41a89d0db74e64ada977c7e22acd69",
@@ -1840,6 +1916,98 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ gateway.base_url}}/notificacoes/f1bf6f10-fc4c-4fbd-ad78-704d2f25491c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6ce58b714d99489d94e3eb073d0a481c",
+			"authentication": {},
+			"body": {},
+			"created": 1554483484239,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1554483484239,
+			"method": "GET",
+			"modified": 1554759046182,
+			"name": "Listar",
+			"parameters": [],
+			"parentId": "fld_eac4b2090c174aa1b8faf78d83c85d08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway_backoffice.base_url  }}/pessoas",
+			"_type": "request"
+		},
+		{
+			"_id": "req_932fe66991c74ccf8b8be143337ea569",
+			"authentication": {},
+			"body": {},
+			"created": 1554495994980,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1554495994980,
+			"method": "GET",
+			"modified": 1554496336305,
+			"name": "Obter por Id",
+			"parameters": [],
+			"parentId": "fld_eac4b2090c174aa1b8faf78d83c85d08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway_backoffice.base_url  }}/pessoas/ {{ pessoa.id  }}",
+			"_type": "request"
+		},
+		{
+			"_id": "req_de29a5b5c90b459a8d3caa8bca67fd40",
+			"authentication": {},
+			"body": {},
+			"created": 1554498605972,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1554498605972,
+			"method": "GET",
+			"modified": 1554500509908,
+			"name": "Listar por documento",
+			"parameters": [],
+			"parentId": "fld_eac4b2090c174aa1b8faf78d83c85d08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway_backoffice.base_url  }}/pessoas/doc/40045958866",
+			"_type": "request"
+		},
+		{
+			"_id": "req_da59d05a91bb483ca94fd75c5b2f702b",
+			"authentication": {},
+			"body": {},
+			"created": 1554746623248,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1554746623248,
+			"method": "GET",
+			"modified": 1554755947159,
+			"name": "Listar documento pendente",
+			"parameters": [],
+			"parentId": "fld_eac4b2090c174aa1b8faf78d83c85d08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ gateway_backoffice.base_url  }}/pessoas/{{ pessoa.id  }}/documentos",
 			"_type": "request"
 		},
 		{
@@ -2465,7 +2633,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469960020,
 			"method": "GET",
-			"modified": 1551887337207,
+			"modified": 1553286654505,
 			"name": "Listar por email",
 			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
@@ -2488,7 +2656,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1547469966403,
 			"method": "GET",
-			"modified": 1552412139247,
+			"modified": 1553286690313,
 			"name": "Obter por id",
 			"parameters": [],
 			"parentId": "fld_6daf8dc1ce0545de871cd7bb181e4ceb",
